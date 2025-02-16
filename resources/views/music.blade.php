@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact')  <!-- Set the title for this page -->
+@section('title', 'Music')  <!-- Set the title for this page -->
 
 @section('content')
 
@@ -38,10 +38,7 @@
             </div>
         </div>
 
-
-        @include('music.empty-single')
-        @include('music.empty-ep')
-        @include('music.empty-album')
+        @include('music.juri-blue-butterfly-single')
 
 
     </div>
