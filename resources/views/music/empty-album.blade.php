@@ -15,6 +15,12 @@
 <div class="h-auto lg:h-full col-span-4 flex">
     <div class="bg-colorPrimary/60 text-sm lg:text-2xl flex flex-col lg:flex-row justify-center items-start text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
         
+        <div class="block lg:hidden h-full pb-10 lg:p-0">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <image href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" class="w-full h-full object-cover" />
+            </svg>
+        </div>
+        
         <!-- Left Section (Album Description) -->
         <div class="lg:w-1/2">
             <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Album Name</h1>
