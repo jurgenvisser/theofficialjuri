@@ -86,7 +86,7 @@
                     <h2 class="mb-2 px-4 lg:px-0 text-xl lg:text-4xl uppercase">
                         You can find links to my <span class="font-bold">music</span> on all streaming platforms and <span class="font-bold">connect with me</span> on my socials right here on my website!
                     </h2>
-                    <p>Follow <a href="/streaming" class="font-bold animate-underline animate-text-color theme-primary"">JURI</a> and <a href="/social-media" class="font-bold animate-underline animate-text-color theme-primary"">@theofficialjuri</a> for my music and updates!</p>
+                    <p class="text-base lg:text-2xl px-4 lg:px-0">Follow <a href="/streaming" class="font-bold animate-underline animate-text-color theme-primary"">JURI</a> and <a href="/social-media" class="font-bold animate-underline animate-text-color theme-primary"">@theofficialjuri</a> for my music and updates!</p>
                 </div>
 
             </div>

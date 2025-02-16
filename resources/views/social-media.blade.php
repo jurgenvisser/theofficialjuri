@@ -10,7 +10,7 @@
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
-            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
+            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
                 <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Follow It</h1>
                 <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Connect With JURI On Social Media</h2>
             </div>
@@ -60,17 +60,17 @@
                     <p class="text-base lg:text-2xl mb-8 px-4 lg:px-0">
                         You can find me <span class="font-bold">@theofficialjuri</span> on <span class="font-bold">Instagram</span>, <span class="font-bold">Threads</span>, <span class="font-bold">Twitter</span>, and <span class="font-bold">Facebook</span>. You can also send me an email. you'll find more about email in the <a href="/contact" class="animate-underline animate-text-color theme-primary"">contact</a> page.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="https://music.apple.com/us/artist/juri/1777135807" class="w-16 h-16 bg-instagram-white bg-cover rounded-lg flex items-center justify-center">
+                    <div class="flex space-x-4 justify-center lg:justify-start w-full">
+                        <a href="https://music.apple.com/us/artist/juri/1777135807" class="w-12 lg:w-16 h-12 lg:h-16 bg-instagram-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- Apple Music Icon -->
                         </a>
-                        <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" class="w-16 h-16 bg-threads-white bg-cover rounded-lg flex items-center justify-center">
+                        <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" class="w-12 lg:w-16 h-12 lg:h-16 bg-threads-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- Spotify Icon -->
                         </a>
-                        <a href="https://www.youtube.com/@JURI-Bloom" class="w-16 h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
+                        <a href="https://www.youtube.com/@JURI-Bloom" class="w-12 lg:w-16 h-12 lg:h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
                             <!-- YouTube Icon -->
                         </a>
-                        <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" class="w-16 h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">
+                        <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" class="w-12 lg:w-16 h-12 lg:h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- YouTube Music Icon -->
                         </a>
                     </div>

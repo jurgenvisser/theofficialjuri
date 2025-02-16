@@ -10,7 +10,7 @@
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
-            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
+            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
                 <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Musical Stories</h1>
                 <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Meaning Behind The Notes</h2>
             </div>
@@ -20,7 +20,7 @@
 </div>
 
 <!-- Main Content Section -->
-<div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
+<div class="bg-colorPrimary/20 h-auto m-0 py-10 lg:py-24 flex justify-center items-center">
     <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
 
 

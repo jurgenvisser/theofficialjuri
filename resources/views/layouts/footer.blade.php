@@ -9,11 +9,13 @@
             </div>
 
             <!-- Footer content and social media links -->
-            <div class="flex flex-col lg:flex-row justify-between items-center lg:w-2/3 text-center lg:text-left space-y-6 lg:space-y-0">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:w-2/3 text-center space-y-6 lg:space-y-0">
                 <!-- Social media links -->
-                <div class="text-md lg:text-xl flex flex-col justify-between items-center">
-                    <p class="font-semibold">Follow <span class="text-colorPrimary">JURI</span> & <span class="text-colorPrimary">@theofficialjuri</span> for my music and updates!</p>
-                    <div class="flex justify-center lg:justify-start space-x-8 font-semibold">
+                <div class="text-md lg:text-xl flex flex-col justify-between items-center px-4">
+                    <p class="font-semibold text-center">
+                        Follow <span class="text-colorPrimary">JURI</span> & <span class="text-colorPrimary">@theofficialjuri</span> for my music and updates!
+                    </p>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 font-semibold mt-4 w-full">
                         <!-- Apple Music -->
                         <a href="https://music.apple.com/us/artist/juri/1777135807" target="_blank" class="animate-underline animate-text-color theme-primary">
                             Apple Music
@@ -31,7 +33,7 @@
                             YouTube
                         </a>
                     </div>
-                    <div class="flex justify-center lg:justify-start space-x-8 font-semibold">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 font-semibold mt-4 w-full">
                         <!-- Instagram -->
                         <a href="https://www.instagram.com/theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
                             Instagram
@@ -57,8 +59,8 @@
                 </div>
 
                 <!-- Logo for smaller screens -->
-                <div class="theme-toggle h-16 block lg:hidden">
-                    <span class="font-lexend text-4xl ml-12">@theofficialjuri</span>
+                <div class="theme-toggle block lg:hidden">
+                    <span class="font-lexend text-4xl text-colorSecondary theme-flipped">@theofficialjuri</span>
                 </div>
 
             </div>

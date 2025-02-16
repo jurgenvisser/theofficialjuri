@@ -10,7 +10,7 @@
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
-            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
+            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
                 <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Bloom the Company</h1>
                 <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">The Foundation Of JURI's Music</h2>
 
