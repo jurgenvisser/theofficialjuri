@@ -37,13 +37,13 @@
                         For general inquiries, questions, or to connect with JURI, feel free to email:<br>
                     </p>
                     <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        📩 <a href="mailto:contact@theofficialjuri.com" class="font-bold animate-underline animate-text-color theme-primary">contact@theofficialjuri.com</a>
+                        <span class="envelope-with-arrow"></span> <a href="mailto:contact@theofficialjuri.com" class="font-bold animate-underline animate-text-color theme-primary">contact@theofficialjuri.com</a>
                     </p>
                     <p class="text-base lg:text-lg px-4 lg:px-0">
                         For bookings, event details, or professional inquiries, please reach out to:
                     </p>
                     <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        📩 <a href="mailto:info@theofficialjuri.com" class="font-bold animate-underline animate-text-color theme-primary">info@theofficialjuri.com</a>
+                        <span class="envelope-with-arrow"></span> <a href="mailto:info@theofficialjuri.com" class="font-bold animate-underline animate-text-color theme-primary">info@theofficialjuri.com</a>
                     </p>
                     <h2 class="px-4 lg:px-0 text-2xl font-bold font-lexend">Prefer Direct Messaging?</h2>
                     <p class="text-base lg:text-lg px-4 lg:px-0">

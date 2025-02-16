@@ -60,7 +60,7 @@
                         You can now listen to my music on <span class="font-bold">Apple Music</span>, <span class="font-bold">Spotify</span>, <span class="font-bold">YouTube Music</span>, and <span class="font-bold">YouTube</span>. I’m constantly expanding, so stay tuned for more platforms coming soon!
                     </p>
                     <p class="text-base lg:text-2xl mb-8 px-4 lg:px-0">
-                        Click the links below to stream my first single, Blue Butterfly, and more as they release. Join me on this incredible musical journey. 🌟
+                        Click the links below to stream my first single, Blue Butterfly, and more as they release. Join me on this incredible musical journey. <span class="glowing-star"></span>
                     </p>
                     <div class="flex space-x-4 justify-center lg:justify-start w-full">
                         <a href="https://music.apple.com/us/artist/juri/1777135807" class="w-12 lg:w-16 h-12 lg:h-16 bg-apple-music-white bg-cover rounded-lg flex items-center justify-center">

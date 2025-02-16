@@ -1,6 +1,12 @@
 <!-- Image Section (2/6) -->
-<div class="bg-black col-span-2 hidden lg:block h-full flex">
-    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<div class="bg-black col-span-2 hidden lg:block h-full flex relative overflow-hidden">
+    <!-- Blurred background -->
+    <div class="absolute inset-0 w-full h-full bg-cover bg-center blur-lg scale-110" 
+         style="background-image: url('{{ asset('images/album-covers/juri-blue-butterfly-single.jpeg') }}');">
+    </div>
+
+    <!-- Main image -->
+    <svg class="w-full h-full relative z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
         <image href="{{ asset('images/album-covers/juri-blue-butterfly-single.jpeg') }}" class="w-full h-full object-cover" />
     </svg>
 </div>
@@ -27,11 +33,8 @@
                     <strong>Blue Butterfly</strong> – 2:31
                 </li>
             </ol>
-            <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                “Blue Butterfly” is a song about resilience and overcoming adversity, symbolized by a butterfly soaring through storms. It reminds us that no obstacle is too great when we follow our hearts and stay true to ourselves.
-            </p>
-            <p class="text-base lg:text-lg px-4 lg:px-0">
-                The song’s creative direction draws on themes of personal transformation and inner strength, encouraging listeners to find courage even in their darkest moments.
+            <p class="text-base lg:text-lg mb-4 px-4 lg:px-0">
+                “Blue Butterfly” celebrates resilience and personal transformation, symbolized by a butterfly soaring through storms. It inspires courage and staying true to oneself, even in the darkest moments.
             </p>
         </div>
 

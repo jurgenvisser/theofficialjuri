@@ -63,6 +63,36 @@ export default {
         plugin(function ({ addUtilities, theme }) {
             addUtilities(
                 {
+                    '.glowing-star::before': {
+                        content: '""',
+                        display: 'inline-block',
+                        width: '1em',
+                        height: '1em',
+                        backgroundImage: "url('/public/images/emojis/glowing-star.png')",
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        verticalAlign: 'middle',
+                    },
+                    '.musical-notes::before': {
+                        content: '""',
+                        display: 'inline-block',
+                        width: '1em',
+                        height: '1em',
+                        backgroundImage: "url('/public/images/emojis/musical-notes.png')",
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        verticalAlign: 'middle',
+                    },
+                    '.envelope-with-arrow::before': {
+                        content: '""',
+                        display: 'inline-block',
+                        width: '1em',
+                        height: '1em',
+                        backgroundImage: "url('/public/images/emojis/envelope-with-arrow.png')",
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        verticalAlign: 'middle',
+                    },
                     '.responsive-width': {
                         width: '85vw',
                     },

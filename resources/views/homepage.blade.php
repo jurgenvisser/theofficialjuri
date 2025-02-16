@@ -36,9 +36,9 @@
             <!-- Content goes here -->
 
                 <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">🌟 Welcome to my official artist page! 🌟</h1>
+                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend"><span class="glowing-star"></span> Welcome to my official artist page! <span class="glowing-star"></span></h1>
                     <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        I’m excited to share my musical journey with you. From a young age, I’ve loved singing and challenging myself vocally—layering harmonies on popular songs while singing in the car or in the shower. This passion grew into something more serious, and it has led to my first single, Blue Butterfly, now available on major streaming platforms! 🎶
+                        I’m excited to share my musical journey with you. From a young age, I’ve loved singing and challenging myself vocally—layering harmonies on popular songs while singing in the car or in the shower. This passion grew into something more serious, and it has led to my first single, Blue Butterfly, now available on major streaming platforms! <span class="musical-notes"></span>
                     </p>
                 </div>
 

@@ -1,7 +1,13 @@
 <!-- Image Section (2/6) -->
-<div class="bg-black col-span-2 hidden lg:block h-full flex">
-    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-        <image id="theme-image-contact-logo-full" href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" class="w-full h-full object-cover" />
+<div class="bg-black col-span-2 hidden lg:block h-full flex relative overflow-hidden">
+    <!-- Blurred background -->
+    <div class="absolute inset-0 w-full h-full bg-cover bg-center blur-lg scale-110" 
+         style="background-image: url('{{ asset('images/photos/alternative-profile-picture.PNG') }}');">
+    </div>
+
+    <!-- Main image -->
+    <svg class="w-full h-full relative z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+        <image href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" class="w-full h-full object-cover" />
     </svg>
 </div>
 
@@ -70,8 +76,14 @@
 </div>
 
 {{-- <!-- Image Section (2/6) -->
-<div class="bg-black col-span-2 hidden lg:block h-full flex">
-    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-        <image id="theme-image-contact-logo-full" href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" class="w-full h-full object-cover" />
+<div class="bg-black col-span-2 hidden lg:block h-full flex relative overflow-hidden">
+    <!-- Blurred background -->
+    <div class="absolute inset-0 w-full h-full bg-cover bg-center blur-lg scale-110" 
+         style="background-image: url('{{ asset('images/photos/alternative-profile-picture.PNG') }}');">
+    </div>
+
+    <!-- Main image -->
+    <svg class="w-full h-full relative z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+        <image href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" class="w-full h-full object-cover" />
     </svg>
 </div> --}}

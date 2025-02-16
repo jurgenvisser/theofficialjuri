@@ -32,7 +32,7 @@
                     <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Social Media</h1>
     
                     <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        Stay in the loop with everything happening in my musical journey by following me on social media! 🎶
+                        Stay in the loop with everything happening in my musical journey by following me on social media! <span class="musical-notes"></span>
                     </p>
                     <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
                         On my socials, you’ll find behind-the-scenes updates, sneak peeks at upcoming projects, and exclusive looks into the creative process. Whether it’s the first glimpse of a new song, moments from the studio, or exciting announcements about releases, I love sharing these moments with you.
@@ -55,7 +55,7 @@
                 <div class="">
                     <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Follow them all</h1>
                     <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        Follow me to stay updated and be part of this amazing journey as we grow together! 🌟
+                        Follow me to stay updated and be part of this amazing journey as we grow together! <span class="glowing-star"></span>
                     </p>
                     <p class="text-base lg:text-2xl mb-8 px-4 lg:px-0">
                         You can find me <span class="font-bold">@theofficialjuri</span> on <span class="font-bold">Instagram</span>, <span class="font-bold">Threads</span>, <span class="font-bold">Twitter</span>, and <span class="font-bold">Facebook</span>. You can also send me an email. you'll find more about email in the <a href="/contact" class="animate-underline animate-text-color theme-primary"">contact</a> page.

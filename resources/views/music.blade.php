@@ -39,6 +39,8 @@
         </div>
 
         @include('music.juri-blue-butterfly-single')
+        @include('music.empty-ep')
+        @include('music.empty-album')
 
 
     </div>

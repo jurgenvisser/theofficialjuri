@@ -15,7 +15,7 @@
                     <p class="font-semibold text-center">
                         Follow <span class="text-colorPrimary">JURI</span> & <span class="text-colorPrimary">@theofficialjuri</span> for my music and updates!
                     </p>
-                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 font-semibold mt-4 w-full">
+                    <div class="grid grid-cols-2 lg:flex lg:justify-center gap-4 lg:gap-8 font-semibold mt-4 w-full">
                         <!-- Apple Music -->
                         <a href="https://music.apple.com/us/artist/juri/1777135807" target="_blank" class="animate-underline animate-text-color theme-primary">
                             Apple Music
@@ -33,7 +33,7 @@
                             YouTube
                         </a>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 font-semibold mt-4 w-full">
+                    <div class="grid grid-cols-2 lg:flex lg:justify-center gap-4 lg:gap-8 font-semibold mt-4 w-full">
                         <!-- Instagram -->
                         <a href="https://www.instagram.com/theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
                             Instagram
@@ -52,15 +52,15 @@
                         </a>
                     </div>
                 </div>
-                
-                <!-- Copyright -->
-                <div class="text-sm mt-6 lg:mt-0">
-                    <p class="">&copy; <span id="current-year"></span> <span class="text-colorPrimary">JURI Bloom</span>. All rights reserved.</p>
-                </div>
 
                 <!-- Logo for smaller screens -->
                 <div class="theme-toggle block lg:hidden">
                     <span class="font-lexend text-4xl text-colorSecondary theme-flipped">@theofficialjuri</span>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-sm mt-6 lg:mt-0">
+                    <p class="">&copy; <span id="current-year"></span> <span class="text-colorPrimary">JURI Bloom</span>. All rights reserved.</p>
                 </div>
 
             </div>
