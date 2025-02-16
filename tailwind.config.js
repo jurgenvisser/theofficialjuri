@@ -56,26 +56,6 @@ export default {
                 'x-white': "url('/public/images/icons/x_logo_white.svg')",
                 'facebook-color': "url('/public/images/icons/Facebook_Logo_Primary.png')",
                 'facebook-white': "url('/public/images/icons/Facebook_Logo_Secondary.png')",
-
-                // 'h-backdrop-1': "url('/public/images/backdrop/horizontal/h_backdrop_1.jpg')",
-                // 'h-backdrop-2': "url('/public/images/backdrop/horizontal/h_backdrop_2.jpg')",
-                'h-backdrop-3': "url('/public/images/backdrop/horizontal/h_backdrop_3.jpg')",
-                'h-backdrop-4': "url('/public/images/backdrop/horizontal/h_backdrop_4.jpg')",
-
-                // 'v-backdrop-1': "url('/public/images/backdrop/vertical/v_backdrop_1.jpg')",
-                // 'v-backdrop-2': "url('/public/images/backdrop/vertical/v_backdrop_2.jpg')",
-                // 'v-backdrop-3': "url('/public/images/backdrop/vertical/v_backdrop_3.jpg')",
-                // 'v-backdrop-4': "url('/public/images/backdrop/vertical/v_backdrop_4.jpg')",
-                'v-backdrop-5': "url('/public/images/backdrop/vertical/v_backdrop_5.jpg')",
-                'v-backdrop-6': "url('/public/images/backdrop/vertical/v_backdrop_6.PNG')",
-                'v-backdrop-7': "url('/public/images/backdrop/vertical/v_backdrop_7.jpg')",
-                'v-backdrop-8': "url('/public/images/backdrop/vertical/v_backdrop_8.jpg')",
-                'v-backdrop-9': "url('/public/images/backdrop/vertical/v_backdrop_9.jpg')",
-
-                'the-system-full': "url('/public/images/logos/TheSystemFull.svg')",
-                'blueprint-full': "url('/public/images/logos/BlueprintFull.svg')",
-                'the-system-horse': "url('/public/images/logos/TheSystemHorse.svg')",
-                'blueprint-horse': "url('/public/images/logos/BlueprintHorse.svg')",
             },
         },
     },
@@ -83,32 +63,6 @@ export default {
         plugin(function ({ addUtilities, theme }) {
             addUtilities(
                 {
-                    /* Existing utilities */
-                    '.clover-chess': {
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '0em',
-                    },
-                    '.clover-chess::before': {
-                        content: '""',
-                        display: 'inline-block',
-                        width: '1em',
-                        height: '1em',
-                        backgroundImage: "url('/public/images/emojis/clover.png')",
-                        backgroundSize: 'contain',
-                        backgroundRepeat: 'no-repeat',
-                        verticalAlign: 'middle',
-                    },
-                    '.clover-chess::after': {
-                        content: '""',
-                        display: 'inline-block',
-                        width: '1em',
-                        height: '1em',
-                        backgroundImage: "url('/public/images/emojis/chess.png')",
-                        backgroundSize: 'contain',
-                        backgroundRepeat: 'no-repeat',
-                        verticalAlign: 'middle',
-                    },
                     '.responsive-width': {
                         width: '85vw',
                     },

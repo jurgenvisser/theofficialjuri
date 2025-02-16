@@ -44,6 +44,5 @@
     </div>
 </div>
 
-
 {{-- @include('layouts.email-form') --}}
 @endsection

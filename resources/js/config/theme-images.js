@@ -1,25 +1,5 @@
 // Define a mapping of IDs to theme-specific image paths
 const themeImages = {
-    'theme-image-header-logo': {
-        primary: '/images/logos/TheSystemHorse.svg',
-        secondary: '/images/logos/BlueprintHorseFilled.svg',
-    },
-    'theme-image-header-logo-text': {
-        primary: '/images/logos/TheSystemText.svg',
-        secondary: '/images/logos/BlueprintText.svg',
-    },
-    'theme-image-header-crypto': {
-        primary: '/images/logos/TheSystemCrypto.svg',
-        secondary: '/images/logos/BlueprintCrypto.svg',
-    },
-    'theme-image-footer-crypto-flipped-desktop': {
-        primary: '/images/logos/BlueprintCrypto.svg',
-        secondary: '/images/logos/TheSystemCrypto.svg',
-    },
-    'theme-image-footer-crypto-flipped-mobile': {
-        primary: '/images/logos/BlueprintCrypto.svg',
-        secondary: '/images/logos/TheSystemCrypto.svg',
-    },
     'theme-image-homepage-logo-full': {
         primary: '/images/photos/profile-picture.PNG',
         secondary: '/images/photos/alternative-profile-picture.PNG',

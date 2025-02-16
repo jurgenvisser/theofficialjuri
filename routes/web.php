@@ -5,14 +5,6 @@ use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 use Spatie\Sitemap\SitemapGenerator;
 
-// // Route::get('/homepage', function () {
-// //     return view('homepage');
-// // })->name('homepage');
-
-// // Route::get('/index', function () {
-// //     return view('homepage');
-// // });
-
 // Route for the 'Homepage' page
 Route::get('/', function () {
     return view('homepage'); // Refer to homepage.blade.php
@@ -32,11 +24,6 @@ Route::get('/streaming', function () {
 Route::get('/social-media', function () {
     return view('social-media'); // Refer to social-media.blade.php
 });
-
-// Route for the 'Merchandise' page
-// Route::get('/merchandise', function () {
-//     return view('merchandise'); // Refer to merchandise.blade.php
-// });
 
 // Route for the 'Company' page
 Route::get('/company', function () {

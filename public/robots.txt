@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap verwijzing
-Sitemap: https://www.thesystemoftheworld.com/sitemap.xml
+Sitemap: https://www.theofficialjuri.com/sitemap.xml

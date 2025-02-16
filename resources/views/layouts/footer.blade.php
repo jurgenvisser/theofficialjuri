@@ -4,12 +4,9 @@
         <div class="flex flex-col lg:flex-row justify-between items-center">
 
             <!-- Logo for larger screens -->
-            <div class="theme-toggle h-16 w-80 hidden lg:block">
+            <div class="theme-toggle w-80 hidden lg:block">
                 <p class="font-lexend text-4xl ml-12 text-colorSecondary theme-flipped">@theofficialjuri</p>
             </div>
-            {{-- <svg class="theme-toggle h-16 w-80 hidden lg:block">
-                <image id="theme-image-footer-crypto-flipped-desktop" href="/images/logos/BlueprintCrypto.svg" width="100%" height="100%"/>
-            </svg> --}}
 
             <!-- Footer content and social media links -->
             <div class="flex flex-col lg:flex-row justify-between items-center lg:w-2/3 text-center lg:text-left space-y-6 lg:space-y-0">
@@ -64,9 +61,6 @@
                     <span class="font-lexend text-4xl ml-12">@theofficialjuri</span>
                 </div>
 
-                {{-- <svg class="theme-toggle h-16 block lg:hidden">
-                    <image id="theme-image-footer-crypto-flipped-mobile" href="/images/logos/BlueprintCrypto.svg" width="100%" height="100%"/>
-                </svg> --}}
             </div>
         </div>
     </div>
