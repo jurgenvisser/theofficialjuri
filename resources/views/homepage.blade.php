@@ -1,17 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'Homepage')  <!-- Set the title for this page -->
+@section('title', 'JURI - Homepage')  <!-- Set the title for this page -->
 
 @section('content')
 
 <!-- Hero Content Section -->
-<div class="h-[calc(100vh-4rem)] bg-v-backdrop-9 lg:bg-h-backdrop-4 bg-cover relative m-0">
-    <div class="h-full flex flex-col">
+<div class="h-[calc(100vh-4rem)] bg-v-backdrop-1 lg:bg-h-backdrop-1 bg-cover relative m-0">
+    <div class="h-full bg-colorPrimary/40 mix-blend-hard flex flex-col">
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
-            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-times">Homepage</h1>
+            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
+                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">JURI</h1>
+                <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Feel The Music</h2>
             </div>
 
         </div>
@@ -25,7 +26,7 @@
         <!-- First Section (2/6) -->
         <div class="bg-black col-span-2 hidden lg:block h-full">
             <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <image id="theme-image-homepage-logo-full" href="{{ asset('images/logos/TheSystemFull.svg') }}" class="w-full h-full object-cover" />
+                <image id="theme-image-homepage-logo-full" href="{{ asset('images/photos/profile-picture.PNG') }}" class="w-full h-full object-cover" />
             </svg>
         </div>
 
@@ -35,24 +36,10 @@
             <!-- Content goes here -->
 
                 <div class="">
-                    <h1 class="mb-8 px-4 lg:px-0 text-4xl font-bold uppercase font-times">Introductie</h1>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        We begrijpen dat je hier bent omdat je iets zoekt. Een antwoord, een oplossing, een stap vooruit. En dat is precies wat The System biedt.
+                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">🌟 Welcome to my official artist page! 🌟</h1>
+                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
+                        I’m excited to share my musical journey with you. From a young age, I’ve loved singing and challenging myself vocally—layering harmonies on popular songs while singing in the car or in the shower. This passion grew into something more serious, and it has led to my first single, Blue Butterfly, now available on major streaming platforms! 🎶
                     </p>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        Op dit moment zijn we hard bezig met het bouwen van een platform dat jouw leven kan veranderen. Een plek waar je de tools vindt om te groeien, sterker te worden, en jezelf te ontdekken.
-                    </p>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        Dit wordt een beweging. The System is voor de mensen die willen winnen, die vastberaden zijn om door te breken.
-                    </p>
-                    <p class="text-base lg:text-lg px-4 lg:px-0">
-                        Blijf op de hoogte voor updates en wees de eerste die toegang krijgt tot exclusieve content, producten, en meer!
-                    </p>
-                    <!-- Space between content and the follow text -->
-                    {{-- <p class="text-base lg:text-lg mt-12 px-4 lg:px-0">
-                        Volg The System voor meer! <br>
-                        TikTok: <a href="https://www.tiktok.com/@thesystemoftheworld" target="_blank" class="underline decoration-colorPrimary">@thesystemoftheworld</a>.
-                    </p> --}}
                 </div>
 
             </div>
@@ -65,12 +52,9 @@
                 <!-- Content goes here -->
             
                 <div class="">
-                    <h1 class="mb-6 lg:mb-8 px-4 lg:px-0 text-4xl font-bold uppercase font-times">Groei naar succes</h1>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        Sta jij stil in het leven? Voelt elke dag hetzelfde, zonder echte vooruitgang? The System is hier om dat te doorbreken.
-                    </p>
-                    <p class="text-base lg:text-lg px-4 lg:px-0">
-                        Dit is geen plek voor excuses. Dit is een beweging voor mensen die écht willen groeien. Mentaal sterker worden, meer discipline opbouwen en eindelijk de controle over je leven nemen.
+                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">The Artist</h1>
+                    <p class="text-base lg:text-2xl px-4 lg:px-0">
+                        As a lead vocalist, my goal is to create music that feels true and authentic—crafting songs that connect deeply with listeners by expressing real emotions and stories. This is just the beginning, so follow me to stay updated on upcoming releases, behind-the-scenes moments, and much more. Let’s embark on this journey together!
                     </p>
                 </div>
 
@@ -79,25 +63,14 @@
 
 
         <!-- Fourth Section (3/6) -->
-        <div class="h-auto lg:h-full col-span-3">
-            <div class="bg-colorPrimary/20 text-sm lg:text-2xl flex flex-col justify-center items-left text-white p-8 lg:p-20 py-20 text-left lg:text-left ">
-            <!-- Content goes here -->
-    
+        <div class="h-auto lg:h-full col-span-3 flex">
+            <div class="bg-colorPrimary/20 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
+                <!-- Content goes here -->
+            
                 <div class="">
-                    <h1 class="mb-6 lg:mb-8 px-4 lg:px-0 text-4xl font-bold uppercase font-times">Wat kun je verwachten?</h1>
-                    <p class="text-base lg:text-lg px-4 lg:px-0 space-y-4">
-                        <span class="block">
-                            <span class="font-bold">Mentale kracht</span> – Doorbreek negatieve gedachten en bouw zelfvertrouwen op.
-                        </span>
-                        <span class="block">
-                            <span class="font-bold">Discipline & Focus</span> – Geen afleiding, alleen actie.
-                        </span>
-                        <span class="block">
-                            <span class="font-bold">Doorbreek je grenzen</span> – Word de sterkste versie van jezelf.
-                        </span>
-                        <span class="block">
-                            <span class="font-bold">Een krachtige community</span> – Omring jezelf met winnaars.
-                        </span>
+                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">The Music</h1>
+                    <p class="text-base lg:text-2xl px-4 lg:px-0">
+                        With each track, I focus on creating something fresh, with melodies that stick with you. My creative process involves a lot of repetition—I’m constantly redoing my vocals until they sound just right. I love the workflow of making music, pushing myself to improve with each song, and bringing new ideas to life.
                     </p>
                 </div>
 
@@ -110,14 +83,10 @@
                 <!-- Content goes here -->
                 
                 <div class="">
-                    <h2 class="mb-6 px-4 lg:px-0 text-xl lg:text-4xl uppercase">
-                        De <span class="font-bold">keuze</span> is aan jou. Blijf je zitten waar je bent? Of neem je vandaag de eerste stap?
-                        <span class="clover-chess"></span>
+                    <h2 class="mb-2 px-4 lg:px-0 text-xl lg:text-4xl uppercase">
+                        You can find links to my <span class="font-bold">music</span> on all streaming platforms and <span class="font-bold">connect with me</span> on my socials right here on my website!
                     </h2>
-                    <p class="text-base lg:text-lg mt-12 px-4 lg:px-0">
-                        Volg The System voor meer! <br>
-                        TikTok: <a href="https://www.tiktok.com/@thesystemoftheworld" target="_blank" class="underline decoration-colorPrimary">@thesystemoftheworld</a>.
-                    </p>
+                    <p>Follow <a href="/streaming" class="font-bold animate-underline animate-text-color theme-primary"">JURI</a> and <a href="/social-media" class="font-bold animate-underline animate-text-color theme-primary"">@theofficialjuri</a> for my music and updates!</p>
                 </div>
 
             </div>

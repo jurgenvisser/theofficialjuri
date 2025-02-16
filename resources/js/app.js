@@ -4,17 +4,24 @@ import './config/theme-images.js';
 import './utils/mobile-menu.js';
 import { setCookie, getCookie } from './services/cookie.js';
 import { setTheme } from './config/theme.js';
+import { handleFlippedTheme } from './config/theme-flipped.js';
 
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
 // Function to apply the stored theme from the cookie on page load
 function applyStoredThemeFromCookie() {
     const currentTheme = getCookie("theme");
-    if (currentTheme === "primary") {
-        setTheme('primary');
-    } else if (currentTheme === "secondary") {
-        setTheme('secondary');
+    
+    if (currentTheme === "primary" || currentTheme === "secondary") {
+        // Apply the correct theme
+        setTheme(currentTheme);
+    } else {
+        // Default to primary if no theme is stored
+        setTheme("primary");
     }
+
+    // After the theme is applied, check for flipped theme elements
+    handleFlippedTheme();  // Adjust flipped theme immediately after setting the theme
 }
 
 // Function to toggle the theme and store it in the cookie
@@ -27,6 +34,9 @@ function toggleTheme() {
     
     // Store the new theme in the cookie (encrypted)
     setCookie("theme", newTheme, 30);
+
+    // Apply flipped theme logic after setting the new theme
+    handleFlippedTheme();  // This will adjust text colors for flipped elements
 }
 
 // Event listener to handle the theme switching button click

@@ -1,12 +1,15 @@
 <div class="bg-black h-16 flex items-center justify-between px-4 sm:px-8 text-white sticky top-0 z-50">
     <!-- Left Logo Section -->
-    <a href="/" class="flex items-center">
-        <svg class="h-12 w-12">
+    <a href="/" class="flex items-center gap-4">
+        {{-- <svg class="h-12 w-12">
             <image id="theme-image-header-logo" href="/images/logos/TheSystemHorse.svg" width="100%" height="100%"/>
-        </svg>
-        <svg class="h-auto w-48 sm:w-72 ml-4">
+        </svg> --}}
+        {{-- <span class="font-lexend text-4xl">JURI Bloom</span>
+        <span class="font-lexend text-4xl">&</span> --}}
+        <span class="font-lexend text-4xl ml-12">@theofficialjuri</span>
+        {{-- <svg class="h-auto w-auto sm:w-72 ml-4">
             <image id="theme-image-header-logo-text" href="/images/logos/TheSystemText.svg" width="100%" height="100%"/>
-        </svg>
+        </svg> --}}
     </a>
 
     <!-- Links (Desktop) Positioned between the two logos -->
@@ -15,8 +18,8 @@
     </div>
 
     <!-- Right Logo Section (visible on desktop) -->
-    <svg class="h-auto w-48 sm:w-72 ml-4 hidden lg:block">
-        <image id="theme-image-header-crypto" href="/images/logos/TheSystemCrypto.svg" width="100%" height="100%"/>
+    <svg class="theme-toggle h-auto w-48 sm:w-72 ml-4 hidden lg:block">
+        {{-- <image id="theme-image-header-crypto" href="/images/logos/TheSystemCrypto.svg" width="100%" height="100%"/> --}}
     </svg>
 
     <!-- Hamburger Menu Button (Visible on mobile) -->

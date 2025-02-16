@@ -5,13 +5,14 @@
 @section('content')
 
 <!-- Hero Content Section -->
-<div class="h-[calc(100vh-4rem)] bg-v-backdrop-5 lg:bg-h-backdrop-2 bg-cover relative m-0">
-    <div class="h-full flex flex-col">
+<div class="h-[calc(100vh-4rem)] bg-v-backdrop-1 lg:bg-h-backdrop-2 bg-cover relative m-0">
+    <div class="h-full bg-colorPrimary/40 mix-blend-hard flex flex-col">
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
             <div class="bg-colorPrimary/60 flex flex-col justify-center items-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-times">Social Media</h1>
+                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Follow It</h1>
+                <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Connect With JURI On Social Media</h2>
             </div>
 
         </div>
@@ -22,28 +23,57 @@
 <div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
     <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
 
-
-        <!-- First Section (6/6) -->
-        <div class="h-auto lg:h-full col-span-6">
+        <!-- First Section (3/6) -->
+        <div class="h-auto lg:h-full col-span-3 flex">
             <div class="bg-colorPrimary/60 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
                 <!-- Content goes here -->
+            
                 <div class="">
-                    <h1 class="mb-8 px-4 lg:px-0 text-4xl font-bold uppercase font-times">Social Media</h1>
+                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Social Media</h1>
     
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        The System is meer dan alleen een platform. Het is een community. Een groep mensen die vastbesloten zijn om hun dromen waar te maken en een verschil te maken in de wereld.
+                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
+                        Stay in the loop with everything happening in my musical journey by following me on social media! 🎶
                     </p>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        Op onze social media kanalen vind je niet alleen updates, maar ook inspiratie, tips en verhalen van gelijkgestemde mensen die hetzelfde pad bewandelen.
+                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
+                        On my socials, you’ll find behind-the-scenes updates, sneak peeks at upcoming projects, and exclusive looks into the creative process. Whether it’s the first glimpse of a new song, moments from the studio, or exciting announcements about releases, I love sharing these moments with you.
                     </p>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        Volg ons en maak deel uit van de beweging. Jouw verhaal kan het volgende grote verhaal zijn!
+                    <p class="text-base lg:text-2xl px-4 lg:px-0">
+                        But it’s not just about the music! You’ll also find other fun content that gives you a deeper look into who I am as an artist and as a person.
                     </p>
-                    <!-- Extra space between the text and the follow text -->
-                    <p class="text-base lg:text-lg mt-12 px-4 lg:px-0">
-                        Volg The System voor meer! <br>
-                        TikTok: <a href="https://www.tiktok.com/@thesystemoftheworld" target="_blank" class="underline decoration-colorPrimary">@thesystemoftheworld</a>.
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Second Section (3/6) -->
+        <div class="h-auto lg:h-full col-span-3 flex">
+            <div class="bg-colorPrimary/20 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
+                <!-- Content goes here -->
+            
+                <div class="">
+                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Follow them all</h1>
+                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
+                        Follow me to stay updated and be part of this amazing journey as we grow together! 🌟
                     </p>
+                    <p class="text-base lg:text-2xl mb-8 px-4 lg:px-0">
+                        You can find me <span class="font-bold">@theofficialjuri</span> on <span class="font-bold">Instagram</span>, <span class="font-bold">Threads</span>, <span class="font-bold">Twitter</span>, and <span class="font-bold">Facebook</span>. You can also send me an email. you'll find more about email in the <a href="/contact" class="animate-underline animate-text-color theme-primary"">contact</a> page.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://music.apple.com/us/artist/juri/1777135807" class="w-16 h-16 bg-instagram-white bg-cover rounded-lg flex items-center justify-center">
+                            <!-- Apple Music Icon -->
+                        </a>
+                        <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" class="w-16 h-16 bg-threads-white bg-cover rounded-lg flex items-center justify-center">
+                            <!-- Spotify Icon -->
+                        </a>
+                        <a href="https://www.youtube.com/@JURI-Bloom" class="w-16 h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
+                            <!-- YouTube Icon -->
+                        </a>
+                        <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" class="w-16 h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">
+                            <!-- YouTube Music Icon -->
+                        </a>
+                    </div>
                 </div>
 
             </div>

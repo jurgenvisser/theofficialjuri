@@ -1,32 +1,33 @@
 // Define a mapping of IDs to theme-specific image paths
 const themeImages = {
     'theme-image-header-logo': {
-        secondary: '/images/logos/BlueprintHorseFilled.svg',
         primary: '/images/logos/TheSystemHorse.svg',
+        secondary: '/images/logos/BlueprintHorseFilled.svg',
     },
     'theme-image-header-logo-text': {
-        secondary: '/images/logos/BlueprintText.svg',
         primary: '/images/logos/TheSystemText.svg',
+        secondary: '/images/logos/BlueprintText.svg',
     },
     'theme-image-header-crypto': {
-        secondary: '/images/logos/BlueprintCrypto.svg',
         primary: '/images/logos/TheSystemCrypto.svg',
+        secondary: '/images/logos/BlueprintCrypto.svg',
     },
     'theme-image-footer-crypto-flipped-desktop': {
-        secondary: '/images/logos/TheSystemCrypto.svg',
         primary: '/images/logos/BlueprintCrypto.svg',
+        secondary: '/images/logos/TheSystemCrypto.svg',
     },
     'theme-image-footer-crypto-flipped-mobile': {
-        secondary: '/images/logos/TheSystemCrypto.svg',
         primary: '/images/logos/BlueprintCrypto.svg',
+        secondary: '/images/logos/TheSystemCrypto.svg',
     },
     'theme-image-homepage-logo-full': {
-        secondary: '/images/alternative-profile-picture.PNG',
-        primary: '/images/profile-picture.PNG',
+        primary: '/images/photos/profile-picture.PNG',
+        secondary: '/images/photos/alternative-profile-picture.PNG',
     },
     'theme-image-contact-logo-full': {
-        secondary: '/images/alternative-profile-picture.PNG',
-        primary: '/images/profile-picture.PNG',    },
+        primary: '/images/photos/alternative-profile-picture.PNG',
+        secondary: '/images/photos/profile-picture.PNG',
+    },
     // Add more images as needed
 };
 

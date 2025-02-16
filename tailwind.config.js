@@ -18,27 +18,54 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                times: ['"Lexend"', 'serif'], // Add Times New Roman as a custom font
+                lexend: ['Lexend', 'sans-serif'],
+                montserrat: ['Montserrat', 'sans-serif'],
+                publicSans: ['Public Sans', 'sans-serif'],
+                quicksand: ['Quicksand', 'sans-serif'],
             },
             colors: {
-                // // systemYellow: '#D9AF5C', // Add systemYellow as a custom color (deprecated)
-                // //systemBlue: '#D9AF5C', // Add systemBlue as a custom color (deprecated)
-                // //juriPrimary: '#62dfe6', // Add juriPrimary as a custom color (deprecated)
-                // //juriSecondary: '#62dfe6', // Add juriSecondary as a custom color (deprecated)
                 colorPrimary: '#74A7D5', // Add colorPrimary as a custom color
                 colorSecondary: '#D767A7', // Add colorSecondary as a custom color
             },
             backgroundImage: {
-                'h-backdrop-1': "url('/public/images/backdrop/horizontal/h_backdrop_1.jpg')",
-                'h-backdrop-2': "url('/public/images/backdrop/horizontal/h_backdrop_2.jpg')",
+                'h-backdrop-1': "url('/public/images/backdrop/horizontal/h_backdrop_1.jpeg')",
+                'h-backdrop-2': "url('/public/images/backdrop/horizontal/h_backdrop_2.jpeg')",
+
+                'v-backdrop-1': "url('/public/images/backdrop/vertical/v_backdrop_1.jpeg')",
+                'v-backdrop-2': "url('/public/images/backdrop/vertical/v_backdrop_2.jpeg')",
+
+                'apple-music-color': "url('/public/images/icons/Apple_Music_Icon.svg')",
+                'apple-music-black': "url('/public/images/icons/Apple_Music_Icon_blk.svg')",
+                'apple-music-white': "url('/public/images/icons/Apple_Music_Icon_wht.svg')",
+                'spotify-color': "url('/public/images/icons/Spotify_Logo_Green.png')",
+                'spotify-black': "url('/public/images/icons/Spotify_Logo_Black.png')",
+                'spotify-white': "url('/public/images/icons/Spotify_Logo_White.png')",
+                'youtube-color': "url('/public/images/icons/youtube_red.svg')",
+                'youtube-black': "url('/public/images/icons/youtube_black.svg')",
+                'youtube-white': "url('/public/images/icons/youtube_white.svg')",
+                'youtube-music-color': "url('/public/images/icons/ytmusic_icon.svg')",
+                'youtube-music-black': "url('/public/images/icons/ytmusic_icon_black.svg')",
+                'youtube-music-white': "url('/public/images/icons/ytmusic_icon_white.svg')",
+
+                'instagram-color': "url('/public/images/icons/Instagram_Glyph_Gradient.svg')",
+                'instagram-black': "url('/public/images/icons/Instagram_Glyph_Black.svg')",
+                'instagram-white': "url('/public/images/icons/Instagram_Glyph_White.svg')",
+                'threads-black': "url('/public/images/icons/threads-logo-black-square.svg')",
+                'threads-white': "url('/public/images/icons/threads-logo-white-square.svg')",
+                'x-black': "url('/public/images/icons/x_logo_black.svg')",
+                'x-white': "url('/public/images/icons/x_logo_white.svg')",
+                'facebook-color': "url('/public/images/icons/Facebook_Logo_Primary.png')",
+                'facebook-white': "url('/public/images/icons/Facebook_Logo_Secondary.png')",
+
+                // 'h-backdrop-1': "url('/public/images/backdrop/horizontal/h_backdrop_1.jpg')",
+                // 'h-backdrop-2': "url('/public/images/backdrop/horizontal/h_backdrop_2.jpg')",
                 'h-backdrop-3': "url('/public/images/backdrop/horizontal/h_backdrop_3.jpg')",
                 'h-backdrop-4': "url('/public/images/backdrop/horizontal/h_backdrop_4.jpg')",
 
-                'v-backdrop-1': "url('/public/images/backdrop/vertical/v_backdrop_1.jpg')",
-                'v-backdrop-2': "url('/public/images/backdrop/vertical/v_backdrop_2.jpg')",
-                'v-backdrop-3': "url('/public/images/backdrop/vertical/v_backdrop_3.jpg')",
-                'v-backdrop-4': "url('/public/images/backdrop/vertical/v_backdrop_4.jpg')",
+                // 'v-backdrop-1': "url('/public/images/backdrop/vertical/v_backdrop_1.jpg')",
+                // 'v-backdrop-2': "url('/public/images/backdrop/vertical/v_backdrop_2.jpg')",
+                // 'v-backdrop-3': "url('/public/images/backdrop/vertical/v_backdrop_3.jpg')",
+                // 'v-backdrop-4': "url('/public/images/backdrop/vertical/v_backdrop_4.jpg')",
                 'v-backdrop-5': "url('/public/images/backdrop/vertical/v_backdrop_5.jpg')",
                 'v-backdrop-6': "url('/public/images/backdrop/vertical/v_backdrop_6.PNG')",
                 'v-backdrop-7': "url('/public/images/backdrop/vertical/v_backdrop_7.jpg')",

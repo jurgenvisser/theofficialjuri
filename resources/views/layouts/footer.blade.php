@@ -4,15 +4,18 @@
         <div class="flex flex-col lg:flex-row justify-between items-center">
 
             <!-- Logo for larger screens -->
-            <svg class="theme-toggle h-16 w-80 hidden lg:block">
+            <div class="theme-toggle h-16 w-80 hidden lg:block">
+                <p class="font-lexend text-4xl ml-12 text-colorSecondary theme-flipped">@theofficialjuri</p>
+            </div>
+            {{-- <svg class="theme-toggle h-16 w-80 hidden lg:block">
                 <image id="theme-image-footer-crypto-flipped-desktop" href="/images/logos/BlueprintCrypto.svg" width="100%" height="100%"/>
-            </svg>
+            </svg> --}}
 
             <!-- Footer content and social media links -->
             <div class="flex flex-col lg:flex-row justify-between items-center lg:w-2/3 text-center lg:text-left space-y-6 lg:space-y-0">
                 <!-- Social media links -->
                 <div class="text-md lg:text-xl flex flex-col justify-between items-center">
-                    <p class="font-semibold">Follow <span class="text-colorPrimary">JURI</span> & <span class="text-colorPrimary">@theofficialjuri</span> for my music and updates</p>
+                    <p class="font-semibold">Follow <span class="text-colorPrimary">JURI</span> & <span class="text-colorPrimary">@theofficialjuri</span> for my music and updates!</p>
                     <div class="flex justify-center lg:justify-start space-x-8 font-semibold">
                         <!-- Apple Music -->
                         <a href="https://music.apple.com/us/artist/juri/1777135807" target="_blank" class="animate-underline animate-text-color theme-primary">
@@ -21,6 +24,10 @@
                         <!-- Spotify -->
                         <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" target="_blank" class="animate-underline animate-text-color theme-primary">
                             Spotify
+                        </a>
+                        <!-- YouTube Music -->
+                        <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" target="_blank" class="animate-underline animate-text-color theme-primary">
+                            YouTube Music
                         </a>
                         <!-- YouTube -->
                         <a href="https://www.youtube.com/@JURI-Bloom" target="_blank" class="animate-underline animate-text-color theme-primary">
@@ -53,9 +60,13 @@
                 </div>
 
                 <!-- Logo for smaller screens -->
-                <svg class="theme-toggle h-16 block lg:hidden">
+                <div class="theme-toggle h-16 block lg:hidden">
+                    <span class="font-lexend text-4xl ml-12">@theofficialjuri</span>
+                </div>
+
+                {{-- <svg class="theme-toggle h-16 block lg:hidden">
                     <image id="theme-image-footer-crypto-flipped-mobile" href="/images/logos/BlueprintCrypto.svg" width="100%" height="100%"/>
-                </svg>
+                </svg> --}}
             </div>
         </div>
     </div>
