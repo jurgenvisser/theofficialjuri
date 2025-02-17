@@ -4,7 +4,15 @@ const themeImages = {
         primary: '/images/photos/profile-picture.PNG',
         secondary: '/images/photos/alternative-profile-picture.PNG',
     },
+    'theme-image-homepage-logo-full-blur': {
+        primary: '/images/photos/profile-picture.PNG',
+        secondary: '/images/photos/alternative-profile-picture.PNG',
+    },
     'theme-image-contact-logo-full': {
+        primary: '/images/photos/alternative-profile-picture.PNG',
+        secondary: '/images/photos/profile-picture.PNG',
+    },
+    'theme-image-contact-logo-full-blur': {
         primary: '/images/photos/alternative-profile-picture.PNG',
         secondary: '/images/photos/profile-picture.PNG',
     },

@@ -10,7 +10,7 @@
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
-            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
+            <div class="bg-colorPrimary/60 rounded-3xl flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
                 <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Musical Stories</h1>
                 <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Meaning Behind The Notes</h2>
             </div>
@@ -26,7 +26,7 @@
 
         <!-- First Section (6/6) -->
         <div class="h-auto lg:h-full col-span-6">
-            <div class="bg-colorPrimary/60 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
+            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
                 <!-- Content goes here -->
                 
                 <div class="">
@@ -39,6 +39,9 @@
         </div>
 
         @include('music.juri-blue-butterfly-single')
+        {{-- @include('music.empty-single') --}}
+        {{-- @include('music.empty-ep') --}}
+        {{-- @include('music.empty-album') --}}
 
 
     </div>

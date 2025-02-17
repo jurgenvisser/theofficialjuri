@@ -10,7 +10,7 @@
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
-            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
+            <div class="bg-colorPrimary/60 rounded-3xl flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
                 <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">JURI</h1>
                 <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Feel The Music</h2>
             </div>
@@ -24,15 +24,24 @@
     <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
        
         <!-- First Section (2/6) -->
-        <div class="bg-black col-span-2 hidden lg:block h-full">
-            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <image id="theme-image-homepage-logo-full" href="{{ asset('images/photos/profile-picture.PNG') }}" class="w-full h-full object-cover" />
+        <div class="bg-black col-span-2 hidden lg:block h-full flex relative overflow-hidden rounded-3xl">
+            <!-- Blurred background -->
+            <svg class="absolute inset-0 w-full h-full blur-lg scale-150" 
+                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <image id="theme-image-homepage-logo-full-blur" href="{{ asset('images/photos/profile-picture.PNG') }}" 
+                       class="w-full h-full object-cover" />
+            </svg>
+        
+            <!-- Main image -->
+            <svg class="w-full h-full relative z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <image id="theme-image-homepage-logo-full" href="{{ asset('images/photos/profile-picture.PNG') }}" 
+                       class="w-full h-full object-cover" />
             </svg>
         </div>
 
         <!-- Second Section (4/6) -->
         <div class="h-full col-span-4 flex">
-            <div class="bg-colorPrimary/60 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
+            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
             <!-- Content goes here -->
 
                 <div class="">
@@ -48,7 +57,7 @@
 
         <!-- Third Section (3/6) -->
         <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/20 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
+            <div class="bg-colorPrimary/20 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
                 <!-- Content goes here -->
             
                 <div class="">
@@ -64,7 +73,7 @@
 
         <!-- Fourth Section (3/6) -->
         <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/20 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
+            <div class="bg-colorPrimary/20 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
                 <!-- Content goes here -->
             
                 <div class="">
@@ -79,7 +88,7 @@
 
         <!-- Fifth Section (6/6) -->
         <div class="h-auto lg:h-full col-span-6">
-            <div class="bg-colorPrimary/60 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
+            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
                 <!-- Content goes here -->
                 
                 <div class="">

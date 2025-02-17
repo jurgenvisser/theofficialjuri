@@ -11,6 +11,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="description" content="Welkom bij JURI. Ontdek, deel en groei met JURI. Volg JURI voor updates, exclusieve content en om je muzikale reis te starten." />
     <link rel="stylesheet" href="css/app.css">
+    <meta name="theme-color" content="#000000">
     <!-- Add your CSS and JS files here with Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
