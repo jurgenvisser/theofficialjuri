@@ -80,5 +80,5 @@
     </div>
 </div>
 
-{{-- @include('layouts.email-form') --}}
+@include('layouts.email-form')
 @endsection

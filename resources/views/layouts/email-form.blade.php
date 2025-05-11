@@ -4,7 +4,7 @@
 
         <!-- Introductory Text -->
         <div class="mb-8 text-justify">
-            <h2 class="mb-6 px-4 lg:px-0 text-4xl font-bold uppercase font-times">COntacteer ons</h2>
+            <h2 class="mb-6 px-4 lg:px-0 text-4xl font-bold uppercase font-times">Contacteer ons</h2>
             <p class="text-base lg:text-lg">
                 Heb je vragen, suggesties, of wil je gewoon met ons in contact komen? 
                 Gebruik het onderstaande formulier om ons te bereiken. 

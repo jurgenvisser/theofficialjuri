@@ -62,16 +62,16 @@
                     </p>
                     <div class="flex space-x-4 justify-center lg:justify-start w-full">
                         <a href="https://music.apple.com/us/artist/juri/1777135807" class="w-12 lg:w-16 h-12 lg:h-16 bg-instagram-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- Apple Music Icon -->
+                            <!-- Instagram Icon -->
                         </a>
                         <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" class="w-12 lg:w-16 h-12 lg:h-16 bg-threads-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- Spotify Icon -->
+                            <!-- Threads Icon -->
                         </a>
                         <a href="https://www.youtube.com/@JURI-Bloom" class="w-12 lg:w-16 h-12 lg:h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
-                            <!-- YouTube Icon -->
+                            <!-- X / Twitter Icon -->
                         </a>
                         <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" class="w-12 lg:w-16 h-12 lg:h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- YouTube Music Icon -->
+                            <!-- Facebook Icon -->
                         </a>
                     </div>
                 </div>

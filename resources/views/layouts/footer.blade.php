@@ -32,6 +32,9 @@
                         <a href="https://www.youtube.com/@JURI-Bloom" target="_blank" class="animate-underline animate-text-color theme-primary">
                             YouTube
                         </a>
+                        {{-- <a href="https://m.youtube.com/@theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
+                            YouTube
+                        </a> --}}
                     </div>
                     <div class="grid grid-cols-2 lg:flex lg:justify-center gap-4 lg:gap-8 font-semibold mt-4 w-full">
                         <!-- Instagram -->
