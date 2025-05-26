@@ -27,6 +27,10 @@ export default {
                 colorPrimary: '#74A7D5', // Add colorPrimary as a custom color
                 colorSecondary: '#D767A7', // Add colorSecondary as a custom color
             },
+            screens: {
+                'xl': '1600px', // Custom breakpoint for 1600px
+                '2xl': '1800px', // Make 2xl larger than xl
+            },
             backgroundImage: {
                 'h-backdrop-1': "url('/public/images/backdrop/horizontal/h_backdrop_1.jpeg')",
                 'h-backdrop-2': "url('/public/images/backdrop/horizontal/h_backdrop_2.jpeg')",
