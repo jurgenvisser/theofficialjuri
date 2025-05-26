@@ -70,7 +70,7 @@
                         <a href="https://www.youtube.com/@JURI-Bloom" class="w-12 lg:w-16 h-12 lg:h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
                             <!-- X / Twitter Icon -->
                         </a>
-                        <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" class="w-12 lg:w-16 h-12 lg:h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">
+                        <a href="https://www.facebook.com/people/JURI/61569421913916/" class="w-12 lg:w-16 h-12 lg:h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- Facebook Icon -->
                         </a>
                     </div>

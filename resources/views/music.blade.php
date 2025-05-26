@@ -38,7 +38,8 @@
             </div>
         </div>
 
-        @include('music.juri-blue-butterfly-single')
+        {{-- @include('music.juri-blue-butterfly-single') --}}
+        @include('music.juri-those-eyes-single')
         {{-- @include('music.empty-single') --}}
         {{-- @include('music.empty-ep') --}}
         {{-- @include('music.empty-album') --}}

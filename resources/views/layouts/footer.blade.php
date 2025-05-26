@@ -50,7 +50,7 @@
                             X / Twitter
                         </a>
                         <!-- Facebook -->
-                        <a href="https://www.facebook.com/share/aMGP6YaodLRAvSRC/?mibextid=LQQJ4d" target="_blank" class="animate-underline animate-text-color theme-primary">
+                        <a href="https://www.facebook.com/people/JURI/61569421913916/" target="_blank" class="animate-underline animate-text-color theme-primary">
                             Facebook
                         </a>
                     </div>
