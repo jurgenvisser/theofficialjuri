@@ -28,8 +28,14 @@ export default {
                 colorSecondary: '#D767A7', // Add colorSecondary as a custom color
             },
             screens: {
-                'xl': '1600px', // Custom breakpoint for 1600px
-                '2xl': '1800px', // Make 2xl larger than xl
+                // 'sm': '640px', // Small screens
+                // 'md': '768px', // Medium screens
+                // 'lg': '1024px', // Large screens
+                // 'xl': '1280px', // Extra large screens
+                // '2xl': '1536px', // Small Monitor screens
+                '3xl': '1680px', // Medium Monitor screens
+                '4xl': '1920px', // Large Monitor screens
+                '5xl': '2560px', // Extra Large Monitor screens
             },
             backgroundImage: {
                 'h-backdrop-1': "url('/public/images/backdrop/horizontal/h_backdrop_1.jpeg')",
@@ -105,9 +111,19 @@ export default {
                         width: '80vw',
                         },
                     },
+                    '.responsive-height': {
+                        paddingTop: '3rem',
+                        paddingBottom: '3rem',
+                    },
+                    [`@media (min-width: ${theme('screens.lg')})`]: {
+                        '.responsive-height': {
+                            paddingTop: '6rem',
+                            paddingBottom: '6rem',
+                        },
+                    },
                     /* New utilities */
                     '.animate-text-color': {
-                        color: 'white',
+                        // // color: 'white',
                         transition: 'color 0.3s ease',
                     },
                     '.theme-primary.animate-text-color:hover': {
@@ -141,7 +157,7 @@ export default {
                         width: '100%',
                     },
                     '.theme-primary, .theme-secondary': {
-                        color: 'white', /* Keep links white by default */
+                        // // color: 'white', /* Keep links white by default */
                         textDecoration: 'none', /* No underline by default */
                         position: 'relative', /* So we can position the underline */
                         overflow: 'hidden', /* Hide the underline by default */

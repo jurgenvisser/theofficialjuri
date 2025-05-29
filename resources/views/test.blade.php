@@ -3,19 +3,21 @@
 @section('title', 'Test')  <!-- Set the title for this page --> {{-- todo: Set the title --}}
 @section('content')
 
-<!-- Hero Content Section -->
-<div class="h-[calc(100vh-4rem)] bg-v-backdrop-8 lg:bg-h-backdrop-1 bg-cover relative m-0"> {{-- todo: Alter the background image --}}
+@include('layouts.admin-testing-panel')
+
+{{-- <!-- Hero Content Section -->
+<div class="h-[calc(100vh-4rem)] bg-v-backdrop-8 lg:bg-h-backdrop-1 bg-cover relative m-0">
     <div class="h-full flex flex-col">
         <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
 
             <!-- Title Section -->
             <div class="bg-colorPrimary/60 flex flex-col justify-center items-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-times">Test</h1> {{-- todo Set the title --}}
+                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-times">Test</h1>
             </div>
 
         </div>
     </div>
-</div>
+</div> --}}
 
 <!-- Main Content Section -->
 <div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
@@ -37,19 +39,20 @@
 
             </div>
         </div>
-      <!-- Apply both the text color change and underline animation -->
-<a href="#" class="theme-yellow animate-text-color animate-underline">Hover me for both effects!</a>
 
-<!-- Apply only the text color change -->
-<a href="#" class="theme-yellow animate-text-color">Hover me for color change only!</a>
+        {{-- <!-- Apply both the text color change and underline animation -->
+        <a href="#" class="theme-yellow animate-text-color animate-underline">Hover me for both effects!</a>
 
-<!-- Apply only the underline effect -->
-<a href="#" class="theme-yellow animate-underline">Hover me for underline effect only!</a>
-<!-- Example for yellow theme -->
-<a class="theme-yellow animate-text-color animate-underline" href="#">Link with Yellow Theme</a>
+        <!-- Apply only the text color change -->
+        <a href="#" class="theme-yellow animate-text-color">Hover me for color change only!</a>
 
-<!-- Example for blue theme -->
-<a class="theme-blue animate-text-color animate-underline" href="#">Link with Blue Theme</a>
+        <!-- Apply only the underline effect -->
+        <a href="#" class="theme-yellow animate-underline">Hover me for underline effect only!</a>
+        <!-- Example for yellow theme -->
+        <a class="theme-yellow animate-text-color animate-underline" href="#">Link with Yellow Theme</a>
+
+        <!-- Example for blue theme -->
+        <a class="theme-blue animate-text-color animate-underline" href="#">Link with Blue Theme</a> --}}
         
     </div>
 </div>

@@ -1,26 +1,28 @@
-<div class="bg-black h-16 flex items-center justify-between px-4 sm:px-8 text-white sticky top-0 z-50">
-    <!-- Left Logo Section -->
-    <a href="/" aria-label="Go to the homepage via the logo" class="flex items-center gap-4">
-        <span class="font-lexend text-4xl ml-12">@theofficialjuri</span>
-    </a>
-
-    <!-- Links (Desktop) Positioned between the two logos -->
-    <div class="hidden xl:flex justify-center items-center space-x-4 sm:space-x-8 mx-4 flex-1">
-        @include('layouts.header-menu')
-    </div>
-
-    <!-- Right Logo Section (visible on desktop) -->
-    <svg class="theme-toggle h-auto w-48 sm:w-72 ml-4 hidden xl:block">
-        {{-- <image id="theme-image-header-crypto" href="/images/logos/TheSystemCrypto.svg" width="100%" height="100%"/> --}}
-    </svg>
-
-    <!-- Hamburger Menu Button (Visible on mobile) -->
-    <div class="xl:hidden flex items-center">
-        <button id="hamburger-icon" class="text-colorPrimary focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
+<div class="w-full flex justify-center items-center">
+    <div class="bg-black h-16 responsive-width flex items-center justify-between text-white sticky top-0 z-50">
+        <!-- Left Logo Section -->
+        <a href="/" aria-label="Go to the homepage via the logo">
+            <span class="font-lexend text-4xl xl:text-2xl 2xl:text-4xl">@theofficialjuri</span>
+        </a>
+    
+        <!-- Links (Desktop) Positioned between the two logos -->
+        <div class="hidden xl:flex justify-center items-center space-x-4 sm:space-x-8 mx-4 flex-1">
+            @include('layouts.header-menu')
+        </div>
+    
+        <!-- Right Logo Section (visible on desktop) -->
+        <a href="/" aria-label="Go to the homepage via the logo" class="hidden xl:block visible xl:invisible">
+            <span class="font-lexend text-4xl xl:text-2xl 2xl:text-4xl">@theofficialjuri</span>
+        </a>
+    
+        <!-- Hamburger Menu Button (Visible on mobile) -->
+        <div class="xl:hidden flex items-center">
+            <button id="hamburger-icon" class="text-colorPrimary focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
     </div>
 </div>
 

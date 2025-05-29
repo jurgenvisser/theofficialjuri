@@ -1,17 +1,19 @@
 <footer class="bg-black text-white py-8">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto responsive-width">
         <!-- Footer content container -->
         <div class="flex flex-col xl:flex-row justify-between items-center">
 
             <!-- Logo for larger screens -->
-            <div class="theme-toggle w-80 hidden xl:block">
-                <p class="font-lexend text-4xl ml-12 text-colorSecondary theme-flipped">@theofficialjuri</p>
+            <div class="xl:w-1/4">
+                <div class="theme-toggle text-center xl:text-start hidden xl:block">
+                    <p class="font-lexend text-4xl xl:text-2xl 2xl:text-4xl text-colorSecondary theme-flipped">@theofficialjuri</p>
+                </div>
             </div>
 
             <!-- Footer content and social media links -->
-            <div class="flex flex-col xl:flex-row justify-between items-center xl:w-2/3 text-center space-y-6 xl:space-y-0">
+            <div class="2xl:w-2/4 flex flex-col xl:flex-row justify-center items-center xl:w-2/3 text-center space-y-6 xl:space-y-0">
                 <!-- Social media links -->
-                <div class="text-md xl:text-xl flex flex-col justify-between items-center px-4">
+                <div class="text-md xl:text-xl flex flex-col justify-center items-center">
                     <p class="font-semibold text-center">
                         Follow <span class="text-colorPrimary">JURI</span> & <span class="text-colorPrimary">@theofficialjuri</span> for my music and updates!
                     </p>
@@ -57,17 +59,18 @@
                 </div>
 
                 <!-- Logo for smaller screens -->
-                <div class="theme-toggle block xl:hidden">
+                <div class="theme-toggle text-center xl:text-end block xl:hidden">
                     <span class="font-lexend text-4xl text-colorSecondary theme-flipped">@theofficialjuri</span>
                 </div>
-
-                <!-- Copyright -->
-                <div class="text-sm mt-6 xl:mt-0">
-                    <p class="">&copy; <span id="current-year"></span> <span class="text-colorPrimary">JURI Bloom</span>. All rights reserved.</p>
-                    <p class="text-gray-800">Website Version: TOJ.0.2.3p</p>
-                </div>
-
             </div>
+
+            <!-- Copyright -->
+            <div class="xl:w-1/4 text-sm mt-6 xl:mt-0 text-center xl:text-end">
+                <p class="">&copy; <span id="current-year"></span> <span class="text-colorPrimary">JURI Bloom</span>. All rights reserved.</p>
+                <p class="text-gray-800">Website Version: TOJ.0.2.4p</p>
+            </div>
+
+
         </div>
     </div>
 </footer>
