@@ -69,10 +69,10 @@
                         <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" class="w-12 lg:w-16 h-12 lg:h-16 bg-spotify-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- Spotify Icon -->
                         </a>
-                        <a href="https://www.youtube.com/@JURI-Bloom" class="w-12 lg:w-16 h-12 lg:h-16 bg-youtube-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
+                        <a href="https://www.youtube.com/@theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-youtube-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
                             <!-- YouTube Icon -->
                         </a>
-                        <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" class="w-12 lg:w-16 h-12 lg:h-16 bg-youtube-music-white bg-cover rounded-lg flex items-center justify-center">
+                        <a href="https://music.youtube.com/channel/UCbbD2b6eD2sKjLC4FHfGmRw" class="w-12 lg:w-16 h-12 lg:h-16 bg-youtube-music-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- YouTube Music Icon -->
                         </a>
                     </div>

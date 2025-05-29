@@ -61,13 +61,13 @@
                         You can find me <span class="font-bold">@theofficialjuri</span> on <span class="font-bold">Instagram</span>, <span class="font-bold">Threads</span>, <span class="font-bold">Twitter</span>, and <span class="font-bold">Facebook</span>. You can also send me an email. you'll find more about email in the <a href="/contact" class="animate-underline animate-text-color theme-primary"">contact</a> page.
                     </p>
                     <div class="flex space-x-4 justify-center lg:justify-start w-full">
-                        <a href="https://music.apple.com/us/artist/juri/1777135807" class="w-12 lg:w-16 h-12 lg:h-16 bg-instagram-white bg-cover rounded-lg flex items-center justify-center">
+                        <a href="https://www.instagram.com/theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-instagram-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- Instagram Icon -->
                         </a>
-                        <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" class="w-12 lg:w-16 h-12 lg:h-16 bg-threads-white bg-cover rounded-lg flex items-center justify-center">
+                        <a href="https://www.threads.com/@theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-threads-white bg-cover rounded-lg flex items-center justify-center">
                             <!-- Threads Icon -->
                         </a>
-                        <a href="https://www.youtube.com/@JURI-Bloom" class="w-12 lg:w-16 h-12 lg:h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
+                        <a href="https://x.com/theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
                             <!-- X / Twitter Icon -->
                         </a>
                         <a href="https://www.facebook.com/people/JURI/61569421913916/" class="w-12 lg:w-16 h-12 lg:h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">

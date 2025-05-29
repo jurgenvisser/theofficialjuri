@@ -25,11 +25,11 @@
                             Spotify
                         </a>
                         <!-- YouTube Music -->
-                        <a href="https://music.youtube.com/channel/UCpS0XdY_5L7IE7AOUEWaAyg" target="_blank" class="animate-underline animate-text-color theme-primary">
+                        <a href="https://music.youtube.com/channel/UCbbD2b6eD2sKjLC4FHfGmRw" target="_blank" class="animate-underline animate-text-color theme-primary">
                             YouTube Music
                         </a>
                         <!-- YouTube -->
-                        <a href="https://www.youtube.com/@JURI-Bloom" target="_blank" class="animate-underline animate-text-color theme-primary">
+                        <a href="https://www.youtube.com/@theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
                             YouTube
                         </a>
                         {{-- <a href="https://m.youtube.com/@theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
@@ -42,7 +42,7 @@
                             Instagram
                         </a>
                         <!-- Threads -->
-                        <a href="https://www.threads.net/@theofficial.juri" target="_blank" class="animate-underline animate-text-color theme-primary">
+                        <a href="https://www.threads.com/@theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
                             Threads
                         </a>
                         <!-- X / Twitter -->
@@ -64,7 +64,7 @@
                 <!-- Copyright -->
                 <div class="text-sm mt-6 xl:mt-0">
                     <p class="">&copy; <span id="current-year"></span> <span class="text-colorPrimary">JURI Bloom</span>. All rights reserved.</p>
-                    <p class="text-gray-800">Website Version: TOJ.0.2.2p</p>
+                    <p class="text-gray-800">Website Version: TOJ.0.2.3p</p>
                 </div>
 
             </div>
