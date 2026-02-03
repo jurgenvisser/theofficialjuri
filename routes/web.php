@@ -48,7 +48,7 @@ Route::get('/admin', function () {
 });
 
 Route::post('/admin/dashboard', function () {
-    $adminPassword = 'TheSkySystem'; // Define your admin password
+    $adminPassword = 'QuanckerLtd.'; // Define your admin password
 
     // Use the facade to get the password from the request
     if (request()->input('password') === $adminPassword) {

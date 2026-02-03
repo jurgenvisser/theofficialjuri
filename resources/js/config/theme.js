@@ -1,20 +1,35 @@
-// Import the generateSelectors function from the selectors file
+// Import de benodigde functies
 import { generateSelectors, defaultOpacities, defaultColorClasses, defaultElementTypes } from '../utils/selectors';
 import { updateThemeImage } from './theme-images.js';
 
-// Function to actually set the theme on the page
 export function setTheme(theme) {
+    // We voegen de nieuwe bubble classes handmatig toe aan de selector lijst, 
+    // anders worden deze elementen overgeslagen door de querySelectorAll.
+    const customSelectors = '.bubblePrimary-hover, .bubbleSecondary-hover';
+    const dynamicSelectors = generateSelectors(defaultColorClasses, defaultOpacities, defaultElementTypes);
+    
     const elementsToToggle = [
-        document.body, // The body
-        ...document.querySelectorAll(generateSelectors(defaultColorClasses, defaultOpacities, defaultElementTypes)),
+        document.body,
+        ...document.querySelectorAll(`${dynamicSelectors}, ${customSelectors}`),
     ];
 
     elementsToToggle.forEach((el) => {
-        // Loop through each of the dynamic color classes and element types
+        // 1. BEHANDEL DE BUBBLE CLASSES (Expliciet)
+        if (theme === "primary") {
+            if (el.classList.contains('bubbleSecondary-hover')) {
+                el.classList.replace('bubbleSecondary-hover', 'bubblePrimary-hover');
+            }
+        } else {
+            if (el.classList.contains('bubblePrimary-hover')) {
+                el.classList.replace('bubblePrimary-hover', 'bubbleSecondary-hover');
+            }
+        }
+
+        // 2. BEHANDEL DE DYNAMISCHE TAILWIND CLASSES
         defaultColorClasses.forEach((colorClass) => {
             defaultElementTypes.forEach((elementType) => {
                 if (theme === "primary") {
-                    // Switching to primary theme
+                    // Naar Primary
                     if (el.classList.contains(`bg-${colorClass}`)) {
                         el.classList.replace(`bg-${colorClass}`, `bg-colorPrimary`);
                     }
@@ -39,7 +54,7 @@ export function setTheme(theme) {
                         el.classList.replace('theme-secondary', 'theme-primary');
                     }
                 } else {
-                    // Switching to secondary theme
+                    // Naar Secondary
                     if (el.classList.contains(`bg-${colorClass}`)) {
                         el.classList.replace(`bg-${colorClass}`, `bg-colorSecondary`);
                     }
@@ -67,5 +82,6 @@ export function setTheme(theme) {
             });
         });
     });
+
     updateThemeImage(theme);
 }

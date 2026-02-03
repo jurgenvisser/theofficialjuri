@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Test')  <!-- Set the title for this page --> {{-- todo: Set the title --}}
+@section('title', 'Test')  <!-- Set the title for this page -->
+
 @section('content')
 
 @include('layouts.admin-testing-panel')
@@ -24,16 +25,16 @@
     <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
 
 
-        <!-- First Section (6/6) --> {{-- todo: Set the correct numbers --}}
+        <!-- First Section (6/6) -->
         <div class="h-auto lg:h-full col-span-6">
             <div class="bg-colorPrimary/60 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
                 <!-- Content goes here -->
                 <div class="">
-                    <h1 class="mb-8 px-4 lg:px-0 text-4xl font-bold uppercase font-times">Test</h1> {{-- todo: Set the title --}}
+                    <h1 class="mb-8 px-4 lg:px-0 text-4xl font-bold uppercase font-times">Test</h1>
     
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0"> {{-- todo: Remove mb-6 for last doby of text --}}
+                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae odit nostrum nemo quasi tempore ullam inventore neque minus alias ducimus distinctio quas ex illum vitae numquam debitis, a laudantium harum pariatur nulla, vero tenetur consequuntur. Deserunt magnam maxime, voluptate amet ut tempore blanditiis quos itaque veniam, quas optio mollitia?
-                        Body of text {{-- todo: Add custom text --}}
+                        Body of text
                     </p>
                 </div>
 

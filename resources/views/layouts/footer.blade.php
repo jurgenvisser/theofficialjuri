@@ -67,7 +67,7 @@
             <!-- Copyright -->
             <div class="xl:w-1/4 text-sm mt-6 xl:mt-0 text-center xl:text-end">
                 <p class="">&copy; <span id="current-year"></span> <span class="text-colorPrimary">JURI Bloom</span>. All rights reserved.</p>
-                <p class="text-gray-800">Website Version: TOJ.0.2.4p</p>
+                <p class="text-gray-800">Website Version: TOJ.0.3.0p</p>
             </div>
 
 
