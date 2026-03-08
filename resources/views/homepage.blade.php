@@ -79,39 +79,121 @@
         </div>
 
         <div class="reveal relative z-10 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-6">
-            <div class="bento-card group flex min-h-[360px] flex-col justify-between bg-gradient-to-br from-[#07242B] to-deep-ocean md:col-span-4 lg:col-span-3 sm:min-h-[450px]">
-                <div class="flex items-start justify-between">
-                    <span class="rounded-full bg-turquoise px-4 py-2 text-[10px] font-black uppercase tracking-widest text-deep-ocean">Label Focus</span>
-                    <span class="font-display text-5xl italic text-nike-volt opacity-20 transition-opacity group-hover:opacity-100">JB</span>
+            <div class="bento-card group relative overflow-hidden flex min-h-[360px] flex-col justify-between bg-gradient-to-br from-[#07242B] to-deep-ocean md:col-span-4 lg:col-span-3 sm:min-h-[450px]">
+                <div class="absolute -right-16 -top-20 h-56 w-56 rounded-full border border-nike-volt/10"></div>
+                <div class="absolute right-16 top-12 h-20 w-20 rounded-full border border-turquoise/20"></div>
+                <div class="absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-turquoise/10 to-transparent transition-all duration-700 group-hover:w-44"></div>
+                <div class="absolute -left-10 bottom-10 h-24 w-24 rotate-12 rounded-3xl border border-paper/10"></div>
+
+                <div class="relative z-10 flex items-start justify-between">
+                    <span class="rounded-full border border-turquoise/35 bg-turquoise/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-turquoise">Label Focus</span>
                 </div>
-                <div class="space-y-6">
-                    <h4 class="font-display text-5xl italic leading-none">Juri Bloom Releases</h4>
+                <div class="relative z-10 space-y-6">
+                    <h4 class="font-display text-5xl italic leading-none">Juri Releases</h4>
                     <p class="max-w-sm text-xs uppercase leading-loose tracking-[0.2em] text-paper/40">Explore the full catalog released under my own label, Juri Bloom.</p>
                     <a href="/music" class="inline-block rounded-full bg-nike-volt px-8 py-3 text-[10px] font-black uppercase tracking-widest text-deep-ocean transition-transform hover:scale-105">View Catalog</a>
                 </div>
             </div>
 
-            <div class="bento-card group flex flex-col items-center justify-center border-none bg-nike-volt text-center text-deep-ocean md:col-span-2 lg:col-span-3">
-                <h4 class="mb-4 font-display text-6xl font-black uppercase italic tracking-tighter transition-transform duration-700 group-hover:scale-110 sm:text-7xl md:text-8xl">Live<br>Groningen</h4>
-                <p class="text-[10px] font-bold uppercase tracking-[0.4em] opacity-40">Local & International Bookings</p>
-            </div>
+            <a href="/streaming" class="bento-card group relative overflow-hidden border-none bg-gradient-to-br from-[#95c700] via-[#7ead00] to-[#5a7f00] text-paper md:col-span-2 lg:col-span-3">
+                <div class="absolute -left-14 -top-16 h-40 w-40 rounded-full border border-paper/20"></div>
+                <div class="absolute -right-10 bottom-10 h-32 w-32 rounded-full border border-paper/15"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(255,255,255,0.25),transparent_50%)]"></div>
+                <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-deep-ocean/30 to-transparent transition-all duration-700 group-hover:w-40"></div>
 
-            <div class="bento-card group flex flex-col items-center justify-between py-12 text-center md:col-span-2 md:py-16">
-                <div class="mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-turquoise/30 bg-turquoise/10 text-paper shadow-[0_0_40px_rgba(0,168,150,0.1)] transition-all duration-500 group-hover:bg-turquoise group-hover:text-deep-ocean">
-                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-                    </svg>
-                </div>
-                <span class="text-[10px] font-black uppercase tracking-[0.5em] text-turquoise">Vocal Services</span>
-            </div>
+                <div class="relative z-10 flex h-full min-h-[300px] flex-col justify-between gap-7 sm:min-h-[340px]">
+                    <div class="flex items-center justify-between">
+                        <span class="rounded-full border border-paper/35 bg-paper/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-paper">Streaming</span>
+                        <span class="text-[10px] font-black uppercase tracking-[0.3em] text-paper/70">4 Platforms</span>
+                    </div>
 
-            <div class="bento-card group flex items-center justify-between overflow-hidden bg-[#0a2e35] md:col-span-2 lg:col-span-4">
-                <div class="p-4">
-                    <h4 class="font-display text-4xl italic transition-colors group-hover:text-nike-volt">Collaboration</h4>
-                    <p class="mt-2 text-[10px] font-bold uppercase tracking-widest opacity-30">From Groningen to the world...</p>
+                    <div class="space-y-4">
+                        <h4 class="font-display text-4xl font-black uppercase italic leading-[0.85] tracking-tighter sm:text-5xl md:text-6xl">
+                            Stream<br>Now
+                        </h4>
+                        <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-paper/70">
+                            Open the full listening hub.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="flex items-center gap-2 rounded-xl border border-paper/25 bg-paper/10 px-3 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-paper">
+                            <img src="{{ asset('images/icons/Apple_Music_Icon_wht.svg') }}" alt="Apple Music" class="h-4 w-4">
+                            <span>Apple Music</span>
+                        </div>
+                        <div class="flex items-center gap-2 rounded-xl border border-paper/25 bg-paper/10 px-3 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-paper">
+                            <img src="{{ asset('images/icons/Spotify_Logo_White.png') }}" alt="Spotify" class="h-4 w-4 object-contain">
+                            <span>Spotify</span>
+                        </div>
+                        <div class="flex items-center gap-2 rounded-xl border border-paper/25 bg-paper/10 px-3 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-paper">
+                            <img src="{{ asset('images/icons/youtube_white.svg') }}" alt="YouTube" class="h-4 w-4">
+                            <span>YouTube</span>
+                        </div>
+                        <div class="flex items-center gap-2 rounded-xl border border-paper/25 bg-paper/10 px-3 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-paper">
+                            <img src="{{ asset('images/icons/ytmusic_icon_white.svg') }}" alt="YouTube Music" class="h-4 w-4">
+                            <span>YT Music</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="h-full w-1/3 translate-x-10 skew-x-12 border-l border-nike-volt/20 bg-azure/20 transition-transform duration-700 group-hover:translate-x-4"></div>
-            </div>
+            </a>
+
+            <a href="/social-media" class="bento-card group relative overflow-hidden md:col-span-2">
+                <div class="absolute -left-10 top-10 h-36 w-36 rounded-full border border-turquoise/15"></div>
+                <div class="absolute -right-8 bottom-8 h-24 w-24 rounded-full border border-nike-volt/15"></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between gap-8">
+                    <div class="flex items-center justify-between">
+                        <span class="rounded-full border border-turquoise/35 bg-turquoise/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-turquoise">Social Feed</span>
+                        <span class="text-[10px] font-black uppercase tracking-[0.3em] text-paper/40">Daily</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex items-center gap-2 rounded-xl border border-turquoise/20 bg-deep-ocean/55 px-3 py-2 transition-all duration-500 group-hover:border-nike-volt/35">
+                            <img src="{{ asset('images/icons/Instagram_Glyph_White.svg') }}" alt="Instagram" class="h-4 w-4">
+                            <span class="text-[10px] font-black uppercase tracking-[0.22em] text-paper/70">Instagram</span>
+                        </div>
+                        <div class="flex items-center gap-2 rounded-xl border border-turquoise/20 bg-deep-ocean/55 px-3 py-2 transition-all duration-500 group-hover:border-nike-volt/35">
+                            <img src="{{ asset('images/icons/threads-logo-white-square.svg') }}" alt="Threads" class="h-4 w-4">
+                            <span class="text-[10px] font-black uppercase tracking-[0.22em] text-paper/70">Threads</span>
+                        </div>
+                        <div class="flex items-center gap-2 rounded-xl border border-turquoise/20 bg-deep-ocean/55 px-3 py-2 transition-all duration-500 group-hover:border-nike-volt/35">
+                            <img src="{{ asset('images/icons/x_logo_white.svg') }}" alt="X" class="h-3 w-4">
+                            <span class="text-[10px] font-black uppercase tracking-[0.22em] text-paper/70">X</span>
+                        </div>
+                        <div class="flex items-center gap-2 rounded-xl border border-turquoise/20 bg-deep-ocean/55 px-3 py-2 transition-all duration-500 group-hover:border-nike-volt/35">
+                            <img src="{{ asset('images/icons/Facebook_Logo_Secondary.png') }}" alt="Facebook" class="h-4 w-4 object-contain">
+                            <span class="text-[10px] font-black uppercase tracking-[0.22em] text-paper/70">Facebook</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="font-display text-3xl italic leading-none text-paper transition-colors group-hover:text-nike-volt">Follow JURI</p>
+                        <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.25em] text-paper/45">@theofficialjuri</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/company" class="bento-card group relative overflow-hidden bg-gradient-to-br from-[#0a2e35] via-[#08272d] to-[#04161a] md:col-span-2 lg:col-span-4">
+                <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full border border-nike-volt/10"></div>
+                <div class="absolute right-14 top-16 h-28 w-28 rounded-full border border-turquoise/20"></div>
+                <div class="absolute inset-y-0 right-0 w-36 bg-gradient-to-l from-nike-volt/10 to-transparent transition-all duration-700 group-hover:w-56"></div>
+
+                <div class="relative z-10 flex h-full flex-col justify-between gap-8 md:flex-row md:items-end">
+                    <span class="absolute left-0 top-0 rounded-full border border-turquoise/35 bg-turquoise/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-turquoise">Independent Label</span>
+
+                    <div class="max-w-xl pt-10">
+                        <h4 class="mt-5 font-display text-5xl italic leading-none transition-colors group-hover:text-nike-volt">JURI Bloom</h4>
+                        <p class="mt-4 text-sm uppercase leading-loose tracking-[0.2em] text-paper/55">
+                            Creative direction, release strategy, and long-term catalog building.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-paper/15 bg-deep-ocean/40 px-5 py-4 text-right">
+                        <p class="text-[10px] font-black uppercase tracking-[0.25em] text-paper/45">Open</p>
+                        <p class="mt-2 text-xs font-black uppercase tracking-[0.25em] text-nike-volt">Company Page</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 

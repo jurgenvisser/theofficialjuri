@@ -9,7 +9,7 @@ use Spatie\Sitemap\Tags\Url;
 use Spatie\Sitemap\SitemapGenerator;
 
 View::share([
-    'appVersion' => 'TOJ.1.0.1P',
+    'appVersion' => 'TOJ.1.0.2p',
 ]);
 
 // Route for the 'Homepage' page
