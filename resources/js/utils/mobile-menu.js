@@ -4,8 +4,6 @@ const mobileMenuPanel = document.getElementById('mobile-menu-panel');
 const mobileMenuBackdrop = document.querySelector('[data-mobile-menu-backdrop]');
 
 if (menuToggleButton && mobileMenu && mobileMenuPanel) {
-    const openIcon = menuToggleButton.querySelector('[data-mobile-menu-open-icon]');
-    const closeIcon = menuToggleButton.querySelector('[data-mobile-menu-close-icon]');
     const openClasses = ['opacity-100', 'pointer-events-auto'];
     const closedClasses = ['opacity-0', 'pointer-events-none'];
     const panelOpenClasses = ['translate-y-0', 'scale-100'];
@@ -16,11 +14,7 @@ if (menuToggleButton && mobileMenu && mobileMenuPanel) {
     function syncButtonState(open) {
         menuToggleButton.setAttribute('aria-expanded', open ? 'true' : 'false');
         mobileMenu.setAttribute('aria-hidden', open ? 'false' : 'true');
-
-        if (openIcon && closeIcon) {
-            openIcon.classList.toggle('hidden', open);
-            closeIcon.classList.toggle('hidden', !open);
-        }
+        menuToggleButton.classList.toggle('is-open', open);
     }
 
     function openMenu() {

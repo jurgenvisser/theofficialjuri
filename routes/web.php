@@ -2,13 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\Carbon;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 use Spatie\Sitemap\SitemapGenerator;
 
 View::share([
-    'appVersion' => 'TOJ.1.0.0P',
+    'appVersion' => 'TOJ.1.0.1P',
 ]);
 
 // Route for the 'Homepage' page

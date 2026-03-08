@@ -78,12 +78,11 @@
             class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-turquoise/30 bg-[#07242B]/90 text-paper transition-colors hover:border-nike-volt hover:text-nike-volt focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nike-volt/60 md:hidden"
         >
             <span class="sr-only">Open mobile menu</span>
-            <svg data-mobile-menu-open-icon xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 7h16M4 12h16M4 17h16"></path>
-            </svg>
-            <svg data-mobile-menu-close-icon xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 6l12 12M18 6L6 18"></path>
-            </svg>
+            <span class="mobile-menu-icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
         </button>
     </div>
 </header>

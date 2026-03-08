@@ -11,7 +11,7 @@
 @endphp
 
 <section class="relative overflow-x-clip overflow-y-visible px-5 pb-14 pt-28 sm:px-6 md:px-12 md:pt-36 lg:px-20">
-    <div class="absolute left-[-15%] top-[-10%] h-[48vw] w-[48vw] rounded-full bg-turquoise/10 blur-[120px]"></div>
+    <div class="absolute left-[-14%] top-[8%] h-[72vw] w-[72vw] sm:left-[-10%] sm:top-[-8%] sm:h-[46vw] sm:w-[46vw] rounded-full bg-turquoise/10 animate-pulse blur-[90px] sm:blur-[120px]"></div>
     <div class="absolute bottom-[-15%] right-[-10%] h-[45vw] w-[45vw] rounded-full bg-azure/20 blur-[140px]"></div>
 
     <div class="relative z-10 mx-auto max-w-[1800px]">

@@ -5,8 +5,8 @@
 @section('content')
 
     <section class="relative flex min-h-screen flex-col justify-center overflow-x-clip overflow-y-visible px-5 pb-16 pt-28 sm:px-6 md:px-20 md:pb-0">
-        <div class="absolute left-[-10%] top-[-10%] h-[50vw] w-[50vw] animate-pulse rounded-full bg-turquoise/10 blur-[120px]"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] h-[40vw] w-[40vw] rounded-full bg-azure/20 blur-[150px]"></div>
+        <div class="absolute left-[-14%] top-[8%] h-[72vw] w-[72vw] sm:left-[-10%] sm:top-[-8%] sm:h-[46vw] sm:w-[46vw] rounded-full bg-turquoise/10 animate-pulse blur-[90px] sm:blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] h-[40vw] w-[40vw] rounded-full animate-pulse bg-azure/20 blur-[150px]"></div>
 
         <div class="relative z-10 max-w-6xl">
             <h2 class="reveal mb-8 text-[11px] font-black uppercase tracking-[0.45em] text-nike-volt sm:text-xs sm:tracking-[0.8em]">Professional Lead Vocalist & Founder of Juri Bloom</h2>
