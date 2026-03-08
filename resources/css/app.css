@@ -1,12 +1,60 @@
 /* Import Google Font */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Space+Grotesk:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        @apply bg-deep-ocean text-paper font-body antialiased selection:bg-nike-volt selection:text-deep-ocean;
+    }
+}
+
+@layer utilities {
+    .text-outline {
+        color: transparent;
+        -webkit-text-stroke: 1.5px rgba(206, 255, 0, 0.4);
+    }
+    .bento-card {
+        @apply bg-[#07242B] border border-turquoise/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:border-nike-volt/40 hover:shadow-[0_0_30px_rgba(206,255,0,0.05)];
+    }
+    .volt-gradient {
+        background: linear-gradient(135deg, #CEFF00 0%, #00A896 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .glow-blue {
+        box-shadow: 0 0 60px rgba(2, 128, 144, 0.2);
+    }
+}
+
+/* Reveal on Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-deep-ocean;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-turquoise/20 rounded-full hover:bg-nike-volt/50 transition-all;
+}
+
 /* Set Roboto Slab as the default font globally */
-body {
+/* body {
     font-family: 'Quicksand', serif;
 }
 
@@ -38,10 +86,10 @@ body {
 
 
 
-.nav {
+.nav { */
     /* Todo: Deze staat uit omdat hij wat jittert met DOM Load fix dit in js/utils/navbar-animations.js */
     /* anchor-name: --nav-container; */
-}
+/* }
 
 .nav a.hovering {
     anchor-name: --nav-hover;
@@ -120,4 +168,4 @@ body {
 
 .bubbleSecondary-hover:hover {
     @apply bubbleSecondary;
-}
+} */

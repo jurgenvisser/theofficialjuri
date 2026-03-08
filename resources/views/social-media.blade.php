@@ -1,86 +1,53 @@
 @extends('layouts.app')
 
-@section('title', 'Social Media')  <!-- Set the title for this page -->
+@section('title', 'Social Media')
 
 @section('content')
+<section class="relative overflow-x-clip overflow-y-visible px-5 pb-16 pt-28 sm:px-6 md:px-12 md:pt-36 lg:px-20">
+    <div class="absolute left-[-12%] top-[-8%] h-[45vw] w-[45vw] rounded-full bg-turquoise/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-16%] right-[-10%] h-[45vw] w-[45vw] rounded-full bg-azure/20 blur-[140px]"></div>
 
-<!-- Hero Content Section -->
-<div class="h-[calc(100vh)] bg-v-backdrop-1 lg:bg-h-backdrop-2 bg-cover relative m-0">
-    <div class="h-full bg-colorPrimary/40 mix-blend-hard flex flex-col">
-        <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
-
-            <!-- Title Section -->
-            <div class="bg-colorPrimary/60 rounded-3xl flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Follow It</h1>
-                <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Connect With JURI On Social Media</h2>
-            </div>
-
-        </div>
+    <div class="relative z-10 mx-auto max-w-[1800px] reveal">
+        <p class="mb-4 text-[10px] font-black uppercase tracking-[0.6em] text-nike-volt">Community & Updates</p>
+        <h1 class="font-display text-5xl uppercase italic leading-[0.84] tracking-tighter sm:text-7xl lg:text-[7rem]">
+            Follow<br>
+            <span class="text-outline not-italic">JURI</span>
+        </h1>
+        <p class="mt-8 max-w-3xl text-lg text-paper/75 sm:text-2xl">
+            Follow the journey on social channels for sneak peeks, studio updates, and new releases.
+        </p>
     </div>
-</div>
+</section>
 
-<!-- Main Content Section -->
-<div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
-    <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
+<section class="px-5 pb-24 sm:px-6 md:px-12 lg:px-20">
+    <div class="mx-auto grid max-w-[1800px] grid-cols-1 gap-8 lg:grid-cols-12">
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-7 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Behind The Scenes</h2>
+            <p class="mt-6 text-base leading-relaxed text-paper/75 sm:text-lg">
+                On social media, I share the creative process, snippets of new tracks, and updates from Groningen. You get a behind-the-scenes view before releases go live.
+            </p>
+            <p class="mt-4 text-base leading-relaxed text-paper/75 sm:text-lg">
+                Follow <span class="text-nike-volt">@theofficialjuri</span> and stay connected to everything around JURI and JURI Bloom.
+            </p>
+        </article>
 
-        <!-- First Section (3/6) -->
-        <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-            
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Social Media</h1>
-    
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        Stay in the loop with everything happening in my musical journey by following me on social media! <span class="musical-notes"></span>
-                    </p>
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        On my socials, you’ll find behind-the-scenes updates, sneak peeks at upcoming projects, and exclusive looks into the creative process. Whether it’s the first glimpse of a new song, moments from the studio, or exciting announcements about releases, I love sharing these moments with you.
-                    </p>
-                    <p class="text-base lg:text-2xl px-4 lg:px-0">
-                        But it’s not just about the music! You’ll also find other fun content that gives you a deeper look into who I am as an artist and as a person.
-                    </p>
-
-                </div>
-
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-5 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Channels</h2>
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="https://www.instagram.com/theofficialjuri" target="_blank" rel="noopener noreferrer" class="group flex h-16 w-16 items-center justify-center rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/Instagram_Glyph_White.svg') }}" alt="Instagram" class="h-8 w-8 transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                </a>
+                <a href="https://www.threads.com/@theofficialjuri" target="_blank" rel="noopener noreferrer" class="group flex h-16 w-16 items-center justify-center rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/threads-logo-white-square.svg') }}" alt="Threads" class="h-8 w-8 transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                </a>
+                <a href="https://x.com/theofficialjuri" target="_blank" rel="noopener noreferrer" class="group flex h-16 w-16 items-center justify-center rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/x_logo_white.svg') }}" alt="X" class="h-8 w-8 transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                </a>
+                <a href="https://www.facebook.com/people/JURI/61569421913916/" target="_blank" rel="noopener noreferrer" class="group flex h-16 w-16 items-center justify-center rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/Facebook_Logo_Secondary.png') }}" alt="Facebook" class="h-8 w-8 object-contain transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                </a>
             </div>
-        </div>
-
-
-        <!-- Second Section (3/6) -->
-        <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/20 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-            
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Follow them all</h1>
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        Follow me to stay updated and be part of this amazing journey as we grow together! <span class="glowing-star"></span>
-                    </p>
-                    <p class="text-base lg:text-2xl mb-8 px-4 lg:px-0">
-                        You can find me <span class="font-bold">@theofficialjuri</span> on <span class="font-bold">Instagram</span>, <span class="font-bold">Threads</span>, <span class="font-bold">Twitter</span>, and <span class="font-bold">Facebook</span>. You can also send me an email. you'll find more about email in the <a href="/contact" class="animate-underline animate-text-color theme-primary"">contact</a> page.
-                    </p>
-                    <div class="flex space-x-4 justify-center lg:justify-start w-full">
-                        <a href="https://www.instagram.com/theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-instagram-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- Instagram Icon -->
-                        </a>
-                        <a href="https://www.threads.com/@theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-threads-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- Threads Icon -->
-                        </a>
-                        <a href="https://x.com/theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-x-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
-                            <!-- X / Twitter Icon -->
-                        </a>
-                        <a href="https://www.facebook.com/people/JURI/61569421913916/" class="w-12 lg:w-16 h-12 lg:h-16 bg-facebook-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- Facebook Icon -->
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        
+        </article>
     </div>
-</div>
-
+</section>
 @endsection

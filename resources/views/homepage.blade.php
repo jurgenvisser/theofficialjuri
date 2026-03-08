@@ -1,108 +1,118 @@
 @extends('layouts.app')
 
-@section('title', 'JURI - Homepage')  <!-- Set the title for this page -->
+@section('title', 'Homepage')
 
 @section('content')
 
-<!-- Hero Content Section -->
-<div class="h-[calc(100vh)] bg-v-backdrop-1 lg:bg-h-backdrop-1 bg-cover relative m-0">
-    <div class="h-full bg-colorPrimary/40 mix-blend-hard flex flex-col">
-        <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
+    <section class="relative flex min-h-screen flex-col justify-center overflow-x-clip overflow-y-visible px-5 pb-16 pt-28 sm:px-6 md:px-20 md:pb-0">
+        <div class="absolute left-[-10%] top-[-10%] h-[50vw] w-[50vw] animate-pulse rounded-full bg-turquoise/10 blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] h-[40vw] w-[40vw] rounded-full bg-azure/20 blur-[150px]"></div>
 
-            <!-- Title Section -->
-            <div class="bg-colorPrimary/60 rounded-3xl flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">JURI</h1>
-                <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Feel The Music</h2>
-            </div>
+        <div class="relative z-10 max-w-6xl">
+            <h2 class="reveal mb-8 text-[11px] font-black uppercase tracking-[0.45em] text-nike-volt sm:text-xs sm:tracking-[0.8em]">Professional Lead Vocalist & Founder of Juri Bloom</h2>
+            <p class="reveal mb-10 font-display text-[20vw] font-black uppercase leading-[0.78] tracking-tighter sm:mb-12 sm:text-[16vw] md:text-[13rem]">
+                VOICE<br>
+                <span class="text-outline italic">BEYOND</span><br>
+                <span class="volt-gradient">SOUND</span>
+            </p>
 
-        </div>
-    </div>
-</div>
-
-<!-- Main Content Section -->
-<div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
-    <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
-       
-        <!-- First Section (2/6) -->
-        <div class="bg-black col-span-2 hidden lg:block h-full flex relative overflow-hidden rounded-3xl">
-            <!-- Blurred background -->
-            <svg class="absolute inset-0 w-full h-full blur-lg scale-150" 
-                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <image id="theme-image-homepage-logo-full-blur" href="{{ asset('images/photos/profile-picture.PNG') }}" 
-                       class="w-full h-full object-cover" />
-            </svg>
-        
-            <!-- Main image -->
-            <svg class="w-full h-full relative z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <image id="theme-image-homepage-logo-full" href="{{ asset('images/photos/profile-picture.PNG') }}" 
-                       class="w-full h-full object-cover" />
-            </svg>
-        </div>
-
-        <!-- Second Section (4/6) -->
-        <div class="h-full col-span-4 flex">
-            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-            <!-- Content goes here -->
-
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend"><span class="glowing-star"></span> Welcome to my official artist page! <span class="glowing-star"></span></h1>
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        I’m excited to share my musical journey with you. From a young age, I’ve loved singing and challenging myself vocally—layering harmonies on popular songs while singing in the car or in the shower. This passion grew into something more serious, and it has led to my first single, Blue Butterfly, now available on major streaming platforms! <span class="musical-notes"></span>
-                    </p>
+            <div class="reveal grid grid-cols-1 items-end gap-10 sm:gap-14 md:grid-cols-2 md:gap-16">
+                <p class="text-lg font-light leading-snug text-paper/70 sm:text-xl md:text-3xl">
+                    Refined vocal performances and independent creativity, operating from <span class="italic text-turquoise">Groningen</span>.
+                </p>
+                <div class="flex items-center gap-6 border-t border-nike-volt/30 pt-6 md:border-l md:border-t-0 md:pl-8 md:pt-0">
+                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-nike-volt">Now available for sessions & releases</span>
                 </div>
-
             </div>
         </div>
+    </section>
 
-
-        <!-- Third Section (3/6) -->
-        <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/20 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-            
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">The Artist</h1>
-                    <p class="text-base lg:text-2xl px-4 lg:px-0">
-                        As a lead vocalist, my goal is to create music that feels true and authentic—crafting songs that connect deeply with listeners by expressing real emotions and stories. This is just the beginning, so follow me to stay updated on upcoming releases, behind-the-scenes moments, and much more. Let’s embark on this journey together!
-                    </p>
+    <section id="about" class="border-y border-turquoise/10 bg-[#061e22] px-5 py-24 sm:px-6 sm:py-32 md:px-20 md:py-40">
+        <div class="mx-auto grid max-w-[1800px] grid-cols-1 items-center gap-12 sm:gap-16 lg:grid-cols-12 lg:gap-20">
+            <div class="reveal relative lg:col-span-5">
+                <div class="glow-blue group relative z-10 aspect-[4/5] overflow-hidden rounded-[2.4rem] border border-turquoise/20 bg-[#082d33] sm:rounded-[3rem] md:rounded-[4rem]">
+                    <img
+                        src="{{ asset('images/photos/profile-picture.PNG') }}"
+                        alt="Portrait of TheOfficialJuri"
+                        class="h-full w-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-deep-ocean/80 to-transparent opacity-0 transition-all duration-700 group-hover:opacity-100"></div>
                 </div>
-
+                <div class="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-[2.4rem] border-2 border-nike-volt opacity-50 transition-all duration-500 group-hover:translate-x-3 group-hover:translate-y-3 sm:-bottom-5 sm:-right-5 sm:rounded-[3rem] md:-bottom-6 md:-right-6 md:rounded-[4rem]"></div>
             </div>
-        </div>
 
-
-        <!-- Fourth Section (3/6) -->
-        <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/20 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-            
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">The Music</h1>
-                    <p class="text-base lg:text-2xl px-4 lg:px-0">
-                        With each track, I focus on creating something fresh, with melodies that stick with you. My creative process involves a lot of repetition—I’m constantly redoing my vocals until they sound just right. I love the workflow of making music, pushing myself to improve with each song, and bringing new ideas to life.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Fifth Section (6/6) -->
-        <div class="h-auto lg:h-full col-span-6">
-            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-                
-                <div class="">
-                    <h2 class="mb-2 px-4 lg:px-0 text-xl lg:text-4xl uppercase">
-                        You can find links to my <span class="font-bold">music</span> on all streaming platforms and <span class="font-bold">connect with me</span> on my socials right here on my website!
+            <div class="reveal space-y-16 lg:col-span-7">
+                <div>
+                    <h3 class="mb-8 text-[10px] font-black uppercase tracking-[0.6em] text-turquoise">The Artist & Label</h3>
+                    <h2 class="font-display text-5xl italic leading-[0.85] tracking-tighter sm:text-6xl md:text-9xl">
+                        TheOfficial<span class="text-outline not-italic">Juri</span>
                     </h2>
-                    <p class="text-base lg:text-2xl px-4 lg:px-0">Follow <a href="/streaming" class="font-bold animate-underline animate-text-color theme-primary"">JURI</a> and <a href="/social-media" class="font-bold animate-underline animate-text-color theme-primary"">@theofficialjuri</a> for my music and updates!</p>
                 </div>
 
+                <div class="max-w-2xl space-y-12">
+                    <p class="text-xl font-light italic leading-relaxed text-paper/80 sm:text-2xl md:text-3xl">
+                        "Under my own label, Juri Bloom, I create a world where my voice is central. No compromises, only pure expression from the north."
+                    </p>
+
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                        <div class="rounded-[2rem] border border-turquoise/10 bg-deep-ocean p-6 transition-colors hover:border-nike-volt/30 sm:p-8 md:rounded-[3rem] md:p-10">
+                            <span class="mb-4 block text-2xl font-black tracking-tighter text-nike-volt">Vocal Artist</span>
+                            <p class="text-xs uppercase leading-relaxed tracking-widest opacity-60">Lead vocalist specialized in unique textures and powerful harmonies.</p>
+                        </div>
+                        <div class="rounded-[2rem] border border-turquoise/10 bg-deep-ocean p-6 transition-colors hover:border-nike-volt/30 sm:p-8 md:rounded-[3rem] md:p-10">
+                            <span class="mb-4 block text-2xl font-black tracking-tighter text-turquoise">Juri Bloom</span>
+                            <p class="text-xs uppercase leading-relaxed tracking-widest opacity-60">My independent label; the home base for all of my creative output.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="relative overflow-x-clip overflow-y-visible bg-deep-ocean px-5 py-24 sm:px-6 sm:py-32 md:px-20 md:py-40">
+        <div class="reveal relative z-10 mb-24 flex flex-col items-end justify-between gap-12 md:flex-row">
+            <h2 class="font-display text-5xl uppercase italic leading-none tracking-tighter sm:text-7xl md:text-[10rem]">Work<span class="not-italic text-nike-volt">.</span></h2>
+            <div class="flex flex-col items-end">
+                <p class="mb-4 max-w-xs text-right text-[10px] font-black uppercase tracking-[0.4em] text-turquoise">TheOfficialJuri x Juri Bloom</p>
+                <div class="h-1 w-32 bg-nike-volt"></div>
             </div>
         </div>
 
+        <div class="reveal relative z-10 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-6">
+            <div class="bento-card group flex min-h-[360px] flex-col justify-between bg-gradient-to-br from-[#07242B] to-deep-ocean md:col-span-4 lg:col-span-3 sm:min-h-[450px]">
+                <div class="flex items-start justify-between">
+                    <span class="rounded-full bg-turquoise px-4 py-2 text-[10px] font-black uppercase tracking-widest text-deep-ocean">Label Focus</span>
+                    <span class="font-display text-5xl italic text-nike-volt opacity-20 transition-opacity group-hover:opacity-100">JB</span>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-display text-5xl italic leading-none">Juri Bloom Releases</h4>
+                    <p class="max-w-sm text-xs uppercase leading-loose tracking-[0.2em] text-paper/40">Explore the full catalog released under my own label, Juri Bloom.</p>
+                    <a href="/music" class="inline-block rounded-full bg-nike-volt px-8 py-3 text-[10px] font-black uppercase tracking-widest text-deep-ocean transition-transform hover:scale-105">View Catalog</a>
+                </div>
+            </div>
 
-    </div>
-</div>
+            <div class="bento-card group flex flex-col items-center justify-center border-none bg-nike-volt text-center text-deep-ocean md:col-span-2 lg:col-span-3">
+                <h4 class="mb-4 font-display text-6xl font-black uppercase italic tracking-tighter transition-transform duration-700 group-hover:scale-110 sm:text-7xl md:text-8xl">Live<br>Groningen</h4>
+                <p class="text-[10px] font-bold uppercase tracking-[0.4em] opacity-40">Local & International Bookings</p>
+            </div>
+
+            <div class="bento-card group flex flex-col items-center justify-between py-12 text-center md:col-span-2 md:py-16">
+                <div class="mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-turquoise/30 bg-turquoise/10 text-paper shadow-[0_0_40px_rgba(0,168,150,0.1)] transition-all duration-500 group-hover:bg-turquoise group-hover:text-deep-ocean">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                    </svg>
+                </div>
+                <span class="text-[10px] font-black uppercase tracking-[0.5em] text-turquoise">Vocal Services</span>
+            </div>
+
+            <div class="bento-card group flex items-center justify-between overflow-hidden bg-[#0a2e35] md:col-span-2 lg:col-span-4">
+                <div class="p-4">
+                    <h4 class="font-display text-4xl italic transition-colors group-hover:text-nike-volt">Collaboration</h4>
+                    <p class="mt-2 text-[10px] font-bold uppercase tracking-widest opacity-30">From Groningen to the world...</p>
+                </div>
+                <div class="h-full w-1/3 translate-x-10 skew-x-12 border-l border-nike-volt/20 bg-azure/20 transition-transform duration-700 group-hover:translate-x-4"></div>
+            </div>
+        </div>
+    </section>
 
 @endsection

@@ -1,72 +1,44 @@
 @extends('layouts.app')
 
-@section('title', 'JURI Bloom - Company')  <!-- Set the title for this page -->
+@section('title', 'JURI Bloom Company')
 
 @section('content')
+<section class="relative overflow-x-clip overflow-y-visible px-5 pb-16 pt-28 sm:px-6 md:px-12 md:pt-36 lg:px-20">
+    <div class="absolute left-[-10%] top-[-10%] h-[45vw] w-[45vw] rounded-full bg-turquoise/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-20%] right-[-12%] h-[50vw] w-[50vw] rounded-full bg-azure/20 blur-[150px]"></div>
 
-<!-- Hero Content Section -->
-<div class="h-[calc(100vh)] bg-v-backdrop-1 lg:bg-h-backdrop-2 bg-cover relative m-0">
-    <div class="h-full bg-colorPrimary/40 mix-blend-hard flex flex-col">
-        <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
-
-            <!-- Title Section -->
-            <div class="bg-colorPrimary/60 rounded-3xl flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Bloom the Company</h1>
-                <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">The Foundation Of JURI's Music</h2>
-
-            </div>
-
-        </div>
+    <div class="relative z-10 mx-auto max-w-[1800px] reveal">
+        <p class="mb-4 text-[10px] font-black uppercase tracking-[0.6em] text-nike-volt">Label & Company</p>
+        <h1 class="font-display text-5xl uppercase italic leading-[0.84] tracking-tighter sm:text-7xl lg:text-[7rem]">
+            JURI<br>
+            <span class="text-outline not-italic">Bloom</span>
+        </h1>
+        <p class="mt-8 max-w-3xl text-lg text-paper/75 sm:text-2xl">
+            The creative and business foundation behind every release, collaboration, and future plan.
+        </p>
     </div>
-</div>
+</section>
 
-<!-- Main Content Section -->
-<div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
-    <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
+<section class="px-5 pb-24 sm:px-6 md:px-12 lg:px-20">
+    <div class="mx-auto grid max-w-[1800px] grid-cols-1 gap-8 lg:grid-cols-12">
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-6 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">The Company</h2>
+            <p class="mt-6 text-base leading-relaxed text-paper/75 sm:text-lg">
+                JURI Bloom is more than a name. It is the structure that supports creativity, releases, and growth. That keeps the focus on music that truly resonates.
+            </p>
+            <p class="mt-4 text-base leading-relaxed text-paper/75 sm:text-lg">
+                From planning to publication, each project is built with intention, quality, and a long-term vision.
+            </p>
+        </article>
 
-
-         <!-- First Section (3/6) -->
-         <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/20 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-            
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold  font-lexend">The Company</h1>
-    
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        Welcome to the heart of what drives my musical journey. JURI Bloom is more than just a name—it’s the foundation that supports everything I do as JURI, the lead vocalist.
-                    </p>
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        At JURI Bloom, the focus is on ensuring that every aspect of my growth, both creatively and professionally, is seamless and purposeful. From managing the release of new music to planning for an exciting future, JURI Bloom is the structure that keeps everything running smoothly behind the scenes.
-                    </p>
-
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- Second Section (3/6) -->
-        <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Why Bloom?</h1>
-    
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        This company exists to allow JURI to focus on what truly matters: creating meaningful music that resonates deeply with listeners. JURI Bloom is the backbone that helps turn vision into reality, making sure every step forward is intentional and impactful.
-                    </p>
-                    <p class="text-base lg:text-2xl mb-8 px-4 lg:px-0">
-                        Whether it’s managing day-to-day operations or planning for long-term goals, JURI Bloom is here to ensure my music and connection with listeners remain at the forefront.
-                    </p>
-                    
-                </div>
-
-            </div>
-        </div>
-
-        
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-6 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Why Bloom</h2>
+            <ul class="mt-6 space-y-4 text-base leading-relaxed text-paper/75 sm:text-lg">
+                <li class="rounded-xl border border-turquoise/15 bg-deep-ocean/50 px-4 py-3">Strong artistic identity without compromise.</li>
+                <li class="rounded-xl border border-turquoise/15 bg-deep-ocean/50 px-4 py-3">Consistent release strategy and catalog growth.</li>
+                <li class="rounded-xl border border-turquoise/15 bg-deep-ocean/50 px-4 py-3">Room for collaborations with producers and featured artists.</li>
+            </ul>
+        </article>
     </div>
-</div>
-
+</section>
 @endsection

@@ -1,76 +1,38 @@
-<footer class="bg-black text-white py-8">
-    <div class="container mx-auto responsive-width">
-        <!-- Footer content container -->
-        <div class="flex flex-col xl:flex-row justify-between items-center">
+<footer id="contact" class="relative overflow-hidden border-t border-turquoise/10 bg-[#031012] px-6 py-12 md:px-20">
+    <div class="absolute right-[-5%] top-[-5%] h-[30vw] w-[30vw] rounded-full border border-nike-volt/5"></div>
 
-            <!-- Logo for larger screens -->
-            <div class="xl:w-1/4">
-                <div class="theme-toggle text-center xl:text-start hidden xl:block">
-                    <p class="font-lexend text-4xl xl:text-2xl 2xl:text-4xl text-colorSecondary theme-flipped">@theofficialjuri</p>
+    <div class="relative z-10 grid grid-cols-1 gap-10 md:grid-cols-2 reveal">
+        <div class="flex flex-col justify-between">
+            <h1 class="font-display text-4xl font-black italic tracking-tighter">THEOFFICIALJURI<span class="text-nike-volt">.</span></h1>
+            <div>
+                <p class="text-[10px] uppercase tracking-[0.3em] text-paper/70">
+                    &copy; {{ now()->year }} <span class="text-nike-volt">JURI Bloom</span>. All rights reserved.
+                </p>
+                <p class="text-[10px] font-black uppercase tracking-[0.5em] text-paper/40">Website Version: {{ $appVersion }}</p>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="grid grid-cols-1 gap-4 text-xs font-bold uppercase tracking-[0.25em] md:grid-cols-2">
+                <div class="border-l border-nike-volt pl-4">
+                    <span class="mb-4 block text-[10px] font-black uppercase tracking-[0.4em] text-turquoise">Streaming</span>
+                    <ul class="grid grid-cols-2 gap-4 text-xs font-bold uppercase tracking-[0.25em]">
+                        <li><a href="https://music.apple.com/us/artist/juri/1777135807" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">Apple Music</a></li>
+                        <li><a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">Spotify</a></li>
+                        <li><a href="https://music.youtube.com/channel/UCbbD2b6eD2sKjLC4FHfGmRw" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">YouTube Music</a></li>
+                        <li><a href="https://www.youtube.com/@theofficialjuri" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="border-l border-nike-volt pl-4 mt-8 md:mt-0">
+                    <span class="mb-4 block text-[10px] font-black uppercase tracking-[0.4em] text-turquoise">Socials</span>
+                    <ul class="grid grid-cols-2 gap-4 text-xs font-bold uppercase tracking-[0.25em]">
+                        <li><a href="https://www.instagram.com/theofficialjuri" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">Instagram</a></li>
+                        <li><a href="https://www.threads.com/@theofficialjuri" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">Threads</a></li>
+                        <li><a href="https://x.com/theofficialjuri" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">X / Twitter</a></li>
+                        <li><a href="https://www.facebook.com/people/JURI/61569421913916/" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-nike-volt">Facebook</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <!-- Footer content and social media links -->
-            <div class="2xl:w-2/4 flex flex-col xl:flex-row justify-center items-center xl:w-2/3 text-center space-y-6 xl:space-y-0">
-                <!-- Social media links -->
-                <div class="text-md xl:text-xl flex flex-col justify-center items-center">
-                    <p class="font-semibold text-center">
-                        Follow <span class="text-colorPrimary">JURI</span> & <span class="text-colorPrimary">@theofficialjuri</span> for my music and updates!
-                    </p>
-                    <div class="grid grid-cols-2 xl:flex xl:justify-center gap-4 xl:gap-8 font-semibold mt-4 w-full">
-                        <!-- Apple Music -->
-                        <a href="https://music.apple.com/us/artist/juri/1777135807" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            Apple Music
-                        </a>
-                        <!-- Spotify -->
-                        <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            Spotify
-                        </a>
-                        <!-- YouTube Music -->
-                        <a href="https://music.youtube.com/channel/UCbbD2b6eD2sKjLC4FHfGmRw" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            YouTube Music
-                        </a>
-                        <!-- YouTube -->
-                        <a href="https://www.youtube.com/@theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            YouTube
-                        </a>
-                        {{-- <a href="https://m.youtube.com/@theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            YouTube
-                        </a> --}}
-                    </div>
-                    <div class="grid grid-cols-2 xl:flex xl:justify-center gap-4 xl:gap-8 font-semibold mt-4 w-full">
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            Instagram
-                        </a>
-                        <!-- Threads -->
-                        <a href="https://www.threads.com/@theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            Threads
-                        </a>
-                        <!-- X / Twitter -->
-                        <a href="https://x.com/theofficialjuri" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            X / Twitter
-                        </a>
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/people/JURI/61569421913916/" target="_blank" class="animate-underline animate-text-color theme-primary">
-                            Facebook
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Logo for smaller screens -->
-                <div class="theme-toggle text-center xl:text-end block xl:hidden">
-                    <span class="font-lexend text-4xl text-colorSecondary theme-flipped">@theofficialjuri</span>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <div class="xl:w-1/4 text-sm mt-6 xl:mt-0 text-center xl:text-end">
-                <p class="">&copy; <span id="current-year"></span> <span class="text-colorPrimary">JURI Bloom</span>. All rights reserved.</p>
-                <p class="text-gray-800">Website Version: TOJ.0.3.0p</p>
-            </div>
-
-
         </div>
     </div>
 </footer>

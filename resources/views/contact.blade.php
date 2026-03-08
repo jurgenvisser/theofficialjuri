@@ -1,84 +1,52 @@
 @extends('layouts.app')
 
-@section('title', 'Contact')  <!-- Set the title for this page -->
+@section('title', 'Contact')
 
 @section('content')
+<section class="relative overflow-x-clip overflow-y-visible px-5 pb-16 pt-28 sm:px-6 md:px-12 md:pt-36 lg:px-20">
+    <div class="absolute left-[-10%] top-[-8%] h-[44vw] w-[44vw] rounded-full bg-turquoise/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-18%] right-[-10%] h-[48vw] w-[48vw] rounded-full bg-azure/20 blur-[140px]"></div>
 
-<!-- Hero Content Section -->
-<div class="h-[calc(100vh)] bg-v-backdrop-1 lg:bg-h-backdrop-1 bg-cover relative m-0">
-    <div class="h-full bg-colorPrimary/40 mix-blend-hard flex flex-col">
-        <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
-
-            <!-- Title Section -->
-            <div class="bg-colorPrimary/60 rounded-3xl flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Concact Bloom</h1>
-                <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Send an Email to connect with a representative</h2>
-            </div>
-
-        </div>
+    <div class="relative z-10 mx-auto max-w-[1800px] reveal">
+        <p class="mb-4 text-[10px] font-black uppercase tracking-[0.6em] text-nike-volt">Contact & Bookings</p>
+        <h1 class="font-display text-5xl uppercase italic leading-[0.84] tracking-tighter sm:text-7xl lg:text-[7rem]">
+            Start The<br>
+            <span class="text-outline not-italic">Echo</span>
+        </h1>
+        <p class="mt-8 max-w-3xl text-lg text-paper/75 sm:text-2xl">
+            For bookings, collaborations, or general questions, you can email directly.
+        </p>
     </div>
-</div>
+</section>
 
-<!-- Main Content Section -->
-<div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
-    <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
-
-
-        <!-- First Section (4/6) -->
-        <div class="h-auto lg:h-full col-span-4 flex">
-            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Efficiently Connect With Us</h1>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        Got a question or want to connect? Whether you’re interested in collaborations, sharing ideas, or just reaching out, I’d love to hear from you!
-                    </p>
-                    <p class="text-base lg:text-lg px-4 lg:px-0">
-                        For general inquiries, questions, or to connect with JURI, feel free to email:<br>
-                    </p>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        <span class="envelope-with-arrow"></span> <a href="mailto:contact@theofficialjuri.com" class="font-bold animate-underline animate-text-color theme-primary">contact@theofficialjuri.com</a>
-                    </p>
-                    <p class="text-base lg:text-lg px-4 lg:px-0">
-                        For bookings, event details, or professional inquiries, please reach out to:
-                    </p>
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0">
-                        <span class="envelope-with-arrow"></span> <a href="mailto:info@theofficialjuri.com" class="font-bold animate-underline animate-text-color theme-primary">info@theofficialjuri.com</a>
-                    </p>
-                    <h2 class="px-4 lg:px-0 text-2xl font-bold font-lexend">Prefer Direct Messaging?</h2>
-                    <p class="text-base lg:text-lg px-4 lg:px-0">
-                        If emailing isn’t your thing or you’d like a quicker way to get in touch, feel free to send me a direct message on Instagram or Facebook. Whether you have questions, want to share something, or just say hi, I’d love to hear from you there too!
-                        You can find the links to my social media profiles on the <a href="/social-media" class="font-bold animate-underline animate-text-color theme-primary">Social Media</a> page.
-                    </p>
-                </div>
-
+<section class="px-5 pb-24 sm:px-6 md:px-12 lg:px-20">
+    <div class="mx-auto grid max-w-[1800px] grid-cols-1 gap-8 lg:grid-cols-12">
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-7 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Email Direct</h2>
+            <p class="mt-6 text-base leading-relaxed text-paper/75 sm:text-lg">
+                We respond as quickly as possible to serious requests and creative proposals.
+            </p>
+            <div class="mt-8 grid grid-cols-1 gap-4">
+                <a href="mailto:contact@theofficialjuri.com" class="rounded-2xl border border-turquoise/20 bg-deep-ocean/45 px-5 py-4 text-sm font-bold uppercase tracking-[0.22em] text-paper/90 transition-colors hover:border-nike-volt/40 hover:text-nike-volt">
+                    contact@theofficialjuri.com
+                </a>
+                <a href="mailto:info@theofficialjuri.com" class="rounded-2xl border border-turquoise/20 bg-deep-ocean/45 px-5 py-4 text-sm font-bold uppercase tracking-[0.22em] text-paper/90 transition-colors hover:border-nike-volt/40 hover:text-nike-volt">
+                    info@theofficialjuri.com
+                </a>
             </div>
-        </div>
+        </article>
 
-        <div class="bg-black col-span-2 hidden lg:block h-full flex relative overflow-hidden rounded-3xl">
-            <!-- Blurred background -->
-            <svg class="absolute inset-0 w-full h-full blur-lg scale-150" 
-                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <image id="theme-image-contact-logo-full-blur" href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" 
-                       class="w-full h-full object-cover" />
-            </svg>
-        
-            <!-- Main image -->
-            <svg class="w-full h-full relative z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <image id="theme-image-contact-logo-full" href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" 
-                       class="w-full h-full object-cover" />
-            </svg>
-        </div>
-         <!-- Second Section (2/6) -->
-         {{-- <div class="bg-black col-span-2 hidden lg:block h-full rounded-3xl">
-            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-                <image id="theme-image-contact-logo-full" href="{{ asset('images/photos/alternative-profile-picture.PNG') }}" class="w-full h-full object-cover" />
-            </svg>
-        </div> --}}
-
-        
+        <article class="reveal overflow-hidden rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-5 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Or DM</h2>
+            <p class="mt-6 text-base leading-relaxed text-paper/75 sm:text-lg">
+                Prefer social media? Send a message through Instagram or Facebook for fast communication.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+                <a href="https://www.instagram.com/theofficialjuri" target="_blank" rel="noopener noreferrer" class="rounded-full border border-turquoise/30 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-paper/90 transition-colors hover:border-nike-volt/50 hover:text-nike-volt">Instagram</a>
+                <a href="https://www.facebook.com/people/JURI/61569421913916/" target="_blank" rel="noopener noreferrer" class="rounded-full border border-turquoise/30 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-paper/90 transition-colors hover:border-nike-volt/50 hover:text-nike-volt">Facebook</a>
+                <a href="/social-media" class="rounded-full border border-turquoise/30 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-paper/90 transition-colors hover:border-nike-volt/50 hover:text-nike-volt">All Socials</a>
+            </div>
+        </article>
     </div>
-</div>
-
-@include('layouts.email-form')
+</section>
 @endsection

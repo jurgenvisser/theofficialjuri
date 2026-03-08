@@ -22,10 +22,17 @@ export default {
                 montserrat: ['Montserrat', 'sans-serif'],
                 publicSans: ['Public Sans', 'sans-serif'],
                 quicksand: ['Quicksand', 'sans-serif'],
+                display: ['"Fraunces"', 'serif'],
+                body: ['"Space Grotesk"', 'sans-serif'],
             },
             colors: {
                 colorPrimary: '#74A7D5', // Add colorPrimary as a custom color
                 colorSecondary: '#D767A7', // Add colorSecondary as a custom color
+                'deep-ocean': '#05161A', // Bijna zwart blauw
+                'turquoise': '#00A896',   // Helder turquoise
+                'azure': '#028090',      // Dieper blauw
+                'nike-volt': '#CEFF00',  // De specifieke felle Volt kleur
+                'paper': '#F0F5F5',      // Off-white met een blauwe tint
             },
             screens: {
                 // 'sm': '640px', // Small screens

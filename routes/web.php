@@ -1,9 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Carbon;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 use Spatie\Sitemap\SitemapGenerator;
+
+View::share([
+    'appVersion' => 'TOJ.1.0.0P',
+]);
 
 // Route for the 'Homepage' page
 Route::get('/', function () {
@@ -12,7 +18,124 @@ Route::get('/', function () {
 
 // Route for the 'Streaming' page
 Route::get('/music', function () {
-    return view('music'); // Refer to missie-visie.blade.php
+    $catalogPath = resource_path('data/music-releases.json');
+    $catalog = [
+        'singles' => [],
+        'eps' => [],
+        'albums' => [],
+    ];
+
+    if (File::exists($catalogPath)) {
+        $decoded = json_decode(File::get($catalogPath), true);
+        if (is_array($decoded)) {
+            $catalog = array_merge($catalog, $decoded);
+        }
+    }
+
+    $normalizePeople = static function ($value): array {
+        if (is_string($value)) {
+            $value = trim($value);
+            return $value !== '' ? [$value] : [];
+        }
+
+        if (!is_array($value)) {
+            return [];
+        }
+
+        return collect($value)
+            ->filter(fn ($item) => is_string($item) && trim($item) !== '')
+            ->map(fn ($item) => trim($item))
+            ->values()
+            ->all();
+    };
+
+    $normalizeVisible = static function ($value): bool {
+        if (is_bool($value)) {
+            return $value;
+        }
+
+        if (is_numeric($value)) {
+            return (int) $value !== 0;
+        }
+
+        if (is_string($value)) {
+            $normalized = strtolower(trim($value));
+            if (in_array($normalized, ['false', '0', 'no', 'off'], true)) {
+                return false;
+            }
+            if (in_array($normalized, ['true', '1', 'yes', 'on'], true)) {
+                return true;
+            }
+        }
+
+        return true;
+    };
+
+    $normalize = static function (array $release, string $type) use ($normalizePeople, $normalizeVisible): array {
+        $releaseDate = $release['release_date'] ?? null;
+        $parsedDate = null;
+
+        if (!empty($releaseDate)) {
+            try {
+                $parsedDate = Carbon::parse($releaseDate);
+            } catch (\Exception $e) {
+                $parsedDate = null;
+            }
+        }
+
+        $tracks = collect($release['tracks'] ?? [])
+            ->filter(fn ($track) => is_array($track))
+            ->map(static function (array $track) use ($normalizePeople): array {
+                return [
+                    'title' => $track['title'] ?? 'Untitled Track',
+                    'subtitle' => $track['subtitle'] ?? null,
+                    'duration' => $track['duration'] ?? null,
+                    'featured_artists' => $normalizePeople($track['featured_artists'] ?? []),
+                    'producers' => $normalizePeople($track['producers'] ?? []),
+                ];
+            })
+            ->values()
+            ->all();
+
+        return [
+            'type' => $type,
+            'visible' => $normalizeVisible($release['visible'] ?? true),
+            'title' => $release['title'] ?? 'Untitled Release',
+            'label' => $release['label'] ?? 'JURI Bloom',
+            'cover_image' => $release['cover_image'] ?? 'images/photos/alternative-profile-picture.PNG',
+            'description' => $release['description'] ?? '',
+            'featured_artists' => $normalizePeople($release['featured_artists'] ?? []),
+            'producers' => $normalizePeople($release['producers'] ?? []),
+            'tracks' => $tracks,
+            'release_date_label' => $parsedDate ? $parsedDate->format('F j, Y') : ($release['release_date_label'] ?? 'TBA'),
+            'release_timestamp' => $parsedDate ? $parsedDate->timestamp : 0,
+        ];
+    };
+
+    $releases = collect()
+        ->merge(
+            collect($catalog['singles'] ?? [])
+                ->filter(fn ($release) => is_array($release))
+                ->map(fn (array $release) => $normalize($release, 'single'))
+        )
+        ->merge(
+            collect($catalog['eps'] ?? [])
+                ->filter(fn ($release) => is_array($release))
+                ->map(fn (array $release) => $normalize($release, 'ep'))
+        )
+        ->merge(
+            collect($catalog['albums'] ?? [])
+                ->filter(fn ($release) => is_array($release))
+                ->map(fn (array $release) => $normalize($release, 'album'))
+        )
+        ->filter(fn (array $release) => ($release['visible'] ?? true) === true)
+        ->sortByDesc('release_timestamp')
+        ->values()
+        ->all();
+
+    return view('music', [
+        'releases' => $releases,
+    ]);
 });
 
 // Route for the 'Streaming' page
@@ -73,9 +196,13 @@ Route::get('/admin/dashboard', function () {
 
 
 // Logout route to clear the session
-Route::get('/admin/logout', function () {
-    session()->forget('admin_logged_in'); // Clear the session
-    return redirect('/')->with('message', 'You have been logged out');
+Route::match(['get', 'post'], '/admin/logout', function () {
+    $session = request()->session();
+    $session->forget('admin_logged_in');
+    $session->invalidate();
+    $session->regenerateToken();
+
+    return redirect('/admin')->with('message', 'You have been logged out');
 });
 
 // Route for the 'Test' page

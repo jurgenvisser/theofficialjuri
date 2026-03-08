@@ -17,7 +17,10 @@
     </a>
 </div> --}}
 <div class="w-full xl:w-auto border-b border-colorPrimary/60 xl:border-none flex justify-center">
-    <a href="/admin/logout" class="xl:animate-underline animate-text-color text-lg font-semibold uppercase py-2 xl:py-0 theme-primary text-center">
-        <span class="text-rose-600">Admin Logout</span>
-    </a>
+    <form action="/admin/logout" method="POST">
+        @csrf
+        <button type="submit" class="xl:animate-underline animate-text-color text-lg font-semibold uppercase py-2 xl:py-0 theme-primary text-center">
+            <span class="text-rose-600">Admin Logout</span>
+        </button>
+    </form>
 </div>

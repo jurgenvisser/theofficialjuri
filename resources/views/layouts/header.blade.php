@@ -1,39 +1,154 @@
-<div class="w-full flex justify-center xl:items-between fixed top-0 z-50 pt-0 xl:pt-12">
-    <div class="responsive-width flex items-center justify-between">
-        <!-- Left Logo Section -->
-        <div class="absolute translate-x-0 left-6 pt-24 xl:pt-0">
-            @include('layouts.header-logo')
-        </div>
-    
-        <!-- Links (Desktop) Positioned between the two logos -->
-        <div class="hidden xl:flex absolute right-6 2xl:left-1/2 2xl:-translate-x-1/2">
-            @include('layouts.header-menu')
-            {{-- @include('layouts.animated-navbar') --}}
-        </div>
-    
-        <!-- Hamburger Menu Button (Visible on mobile) -->
-        <div class="xl:hidden flex items-center absolute right-6 pt-24 xl:pt-0">
-            <div class="relative h-[64px] flex items-center justify-between rounded-full px-0.5">
-            <div class="absolute inset-0 rounded-full bg-gradient-to-b from-neutral-700 to-neutral-800 shadow-[0_8px_32px_rgba(0,0,0,0.6),0_2px_8px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1),inset_0_-1px_2px_rgba(0,0,0,0.5)]"></div>
-            <div class="absolute inset-[3px] rounded-full bg-gradient-to-b from-neutral-800 to-neutral-900 shadow-[inset_0_2px_4px_rgba(0,0,0,0.8),inset_0_-1px_2px_rgba(255,255,255,0.05)]"></div>
-            <div class="fixed h-[48px] transition-all duration-200 bg-gradient-to-b from-white/10 to-white/5 rounded-full shadow-[inset_0_1px_2px_rgba(255,255,255,0.2)] backdrop-blur-sm" style="top:8px"></div>
-                <nav class="flex m-1.5 fit-content">
-                    <button id="hamburger-icon" class="bubblePrimary-hover relative px-5 cursor-pointer py-3 rounded-full flex justify-center items-center z-10 text-white font-lexend text-2xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
+@php
+    $mainLinks = [
+        ['label' => 'Homepage', 'href' => '/'],
+        ['label' => 'Music', 'href' => '/music'],
+        ['label' => 'Streaming', 'href' => '/streaming'],
+        ['label' => 'Social Media', 'href' => '/social-media'],
+        ['label' => 'JURI Bloom', 'href' => '/company'],
+        ['label' => 'Contact', 'href' => '/contact'],
+    ];
 
-{{-- # Mobile Menu is outside of the parent div from the navbar. This is intended and needs to stay this way. --}}
-<!-- Mobile Menu (Hidden by default, toggled by hamburger) -->
-<div id="mobile-menu" class="xl:hidden w-full text-white fixed top-24 left-0 hidden max-h-screen overflow-y-auto z-40">
-    <div class="flex flex-col space-y-0 rounded-[32px] px-6">
-        @include('layouts.header-menu')
-        {{-- @include('layouts.animated-navbar') --}}
+    $adminLinks = [
+        ['label' => 'Admin Dashboard', 'href' => '/admin/dashboard'],
+        ['label' => 'Admin Test', 'href' => '/admin/test'],
+        ['label' => 'Admin Logout', 'href' => '/admin/logout', 'isLogout' => true],
+    ];
+
+    $adminLoggedIn = (bool) session('admin_logged_in');
+@endphp
+
+<header class="fixed inset-x-0 top-0 z-50 border-b border-turquoise/15 bg-deep-ocean/90 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-[1800px] items-center justify-between px-4 py-4 sm:px-6 md:px-10 md:py-6">
+        <a href="/" class="font-display text-2xl font-black italic tracking-tighter sm:text-3xl md:text-4xl">
+            THEOFFICIALJURI<span class="text-nike-volt">.</span>
+        </a>
+
+        <div class="hidden md:flex md:flex-col md:items-end md:gap-2">
+            <nav class="flex items-center gap-5 text-[10px] font-bold uppercase tracking-[0.28em] lg:gap-7 lg:tracking-[0.34em]">
+                @foreach ($mainLinks as $link)
+                    @php
+                        $path = trim($link['href'], '/');
+                        $isActive = $path === '' ? request()->path() === '/' : request()->is($path) || request()->is($path . '/*');
+                    @endphp
+                    <a
+                        href="{{ $link['href'] }}"
+                        class="transition-colors {{ $isActive ? 'text-nike-volt' : 'text-paper hover:text-nike-volt' }}"
+                    >
+                        {{ $link['label'] }}
+                    </a>
+                @endforeach
+            </nav>
+
+            @if ($adminLoggedIn)
+                <nav class="flex items-center gap-5 text-[10px] font-bold uppercase tracking-[0.28em] lg:gap-7 lg:tracking-[0.34em]">
+                    @foreach ($adminLinks as $link)
+                        @php
+                            $path = trim($link['href'], '/');
+                            $isActive = request()->is($path) || request()->is($path . '/*');
+                            $isLogout = (bool) ($link['isLogout'] ?? false);
+                        @endphp
+                        @if ($isLogout)
+                            <form action="/admin/logout" method="POST" class="inline">
+                                @csrf
+                                <button
+                                    type="submit"
+                                    class="transition-colors text-rose-400 uppercase hover:text-rose-600"
+                                >
+                                    {{ $link['label'] }}
+                                </button>
+                            </form>
+                        @else
+                            <a
+                                href="{{ $link['href'] }}"
+                                class="transition-colors {{ $isActive ? 'text-nike-volt' : 'text-paper hover:text-nike-volt' }}"
+                            >
+                                {{ $link['label'] }}
+                            </a>
+                        @endif
+                    @endforeach
+                </nav>
+            @endif
+        </div>
+
+        <button
+            id="hamburger-icon"
+            type="button"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-turquoise/30 bg-[#07242B]/90 text-paper transition-colors hover:border-nike-volt hover:text-nike-volt focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nike-volt/60 md:hidden"
+        >
+            <span class="sr-only">Open mobile menu</span>
+            <svg data-mobile-menu-open-icon xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 7h16M4 12h16M4 17h16"></path>
+            </svg>
+            <svg data-mobile-menu-close-icon xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 6l12 12M18 6L6 18"></path>
+            </svg>
+        </button>
     </div>
+</header>
+
+<div id="mobile-menu" aria-hidden="true" class="fixed inset-0 z-40 hidden pointer-events-none opacity-0 transition-opacity duration-300 md:hidden">
+    <button
+        type="button"
+        data-mobile-menu-backdrop
+        tabindex="-1"
+        aria-label="Close mobile menu"
+        class="absolute inset-0 bg-deep-ocean/80 backdrop-blur-sm"
+    ></button>
+
+    <nav
+        id="mobile-menu-panel"
+        class="relative mx-4 mt-24 origin-top translate-y-4 scale-[0.98] rounded-[2rem] border border-turquoise/20 bg-[#07242B]/95 p-6 shadow-[0_20px_70px_rgba(0,0,0,0.45)] transition-transform duration-300"
+    >
+        <ul class="space-y-2 text-sm font-bold uppercase tracking-[0.24em]">
+            @foreach ($mainLinks as $link)
+                @php
+                    $path = trim($link['href'], '/');
+                    $isActive = $path === '' ? request()->path() === '/' : request()->is($path) || request()->is($path . '/*');
+                @endphp
+                <li>
+                    <a
+                        href="{{ $link['href'] }}"
+                        class="block rounded-2xl border px-4 py-3 transition-colors {{ $isActive ? 'border-nike-volt/50 bg-nike-volt/10 text-nike-volt' : 'border-transparent hover:border-nike-volt/30 hover:bg-deep-ocean/40 hover:text-nike-volt' }}"
+                    >
+                        {{ $link['label'] }}
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+
+        @if ($adminLoggedIn)
+            <div class="my-5 h-px w-full bg-turquoise/20"></div>
+            <ul class="space-y-2 text-xs font-black uppercase tracking-[0.22em]">
+                @foreach ($adminLinks as $link)
+                    @php
+                        $path = trim($link['href'], '/');
+                        $isActive = request()->is($path) || request()->is($path . '/*');
+                        $isLogout = (bool) ($link['isLogout'] ?? false);
+                    @endphp
+                    <li>
+                        @if ($isLogout)
+                            <form action="/admin/logout" method="POST">
+                                @csrf
+                                <button
+                                    type="submit"
+                                    class="block w-full rounded-2xl border border-rose-500/45 px-4 py-3 text-left text-rose-300 transition-colors hover:border-rose-400"
+                                >
+                                    {{ $link['label'] }}
+                                </button>
+                            </form>
+                        @else
+                            <a
+                                href="{{ $link['href'] }}"
+                                class="block rounded-2xl border px-4 py-3 transition-colors {{ $isActive ? 'border-nike-volt/50 bg-nike-volt/10 text-nike-volt' : 'border-turquoise/30 text-turquoise hover:border-nike-volt/35 hover:text-nike-volt' }}"
+                            >
+                                {{ $link['label'] }}
+                            </a>
+                        @endif
+                    </li>
+                @endforeach
+            </ul>
+        @endif
+    </nav>
 </div>

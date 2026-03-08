@@ -1,44 +1,27 @@
 @extends('layouts.app')
 
-@section('title', 'TITLE')  <!-- Set the title for this page --> {{-- todo: Set the title --}}
+@section('title', 'Template Page')
+
 @section('content')
+<section class="relative overflow-x-clip overflow-y-visible px-5 pb-16 pt-28 sm:px-6 md:px-12 md:pt-36 lg:px-20">
+    <div class="absolute left-[-10%] top-[-8%] h-[42vw] w-[42vw] rounded-full bg-turquoise/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-14%] right-[-10%] h-[45vw] w-[45vw] rounded-full bg-azure/20 blur-[140px]"></div>
 
-<!-- Hero Content Section -->
-<div class="h-[calc(100vh-4rem)] bg-v-backdrop-8 lg:bg-h-backdrop-1 bg-cover relative m-0"> {{-- todo: Alter the background image --}}
-    <div class="h-full flex flex-col">
-        <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
-
-            <!-- Title Section -->
-            <div class="bg-colorPrimary/60 flex flex-col justify-center items-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-times">TITLE</h1> {{-- todo Set the title --}}
-            </div>
-
-        </div>
+    <div class="relative z-10 mx-auto max-w-[1800px] reveal">
+        <p class="mb-4 text-[10px] font-black uppercase tracking-[0.6em] text-nike-volt">Template</p>
+        <h1 class="font-display text-5xl uppercase italic leading-[0.84] tracking-tighter sm:text-7xl lg:text-[6rem]">TITLE</h1>
+        <p class="mt-6 max-w-2xl text-lg text-paper/75">Use this page as a base for new content sections.</p>
     </div>
-</div>
+</section>
 
-<!-- Main Content Section -->
-<div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
-    <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
-
-
-        <!-- First Section (6/6) --> {{-- todo: Set the correct numbers --}}
-        <div class="h-auto lg:h-full col-span-6">
-            <div class="bg-colorPrimary/60 text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-                <div class="">
-                    <h1 class="mb-8 px-4 lg:px-0 text-4xl font-bold uppercase font-times">TITLE</h1> {{-- todo: Set the title --}}
-    
-                    <p class="text-base lg:text-lg mb-6 px-4 lg:px-0"> {{-- todo: Remove mb-6 for last doby of text --}}
-                        Body of text {{-- todo: Add custom text --}}
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-        
+<section class="px-5 pb-24 sm:px-6 md:px-12 lg:px-20">
+    <div class="mx-auto max-w-[1800px]">
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/75 p-8 sm:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Content Block</h2>
+            <p class="mt-6 text-base leading-relaxed text-paper/75 sm:text-lg">
+                Body of text.
+            </p>
+        </article>
     </div>
-</div>
-
+</section>
 @endsection

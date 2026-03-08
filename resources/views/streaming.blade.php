@@ -1,88 +1,57 @@
 @extends('layouts.app')
 
-@section('title', 'Streaming Services')  <!-- Set the title for this page -->
+@section('title', 'Streaming Services')
 
 @section('content')
+<section class="relative overflow-x-clip overflow-y-visible px-5 pb-16 pt-28 sm:px-6 md:px-12 md:pt-36 lg:px-20">
+    <div class="absolute left-[-10%] top-[-8%] h-[42vw] w-[42vw] rounded-full bg-turquoise/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-18%] right-[-12%] h-[48vw] w-[48vw] rounded-full bg-azure/20 blur-[140px]"></div>
 
-<!-- Hero Content Section -->
-<div class="h-[calc(100vh)] bg-v-backdrop-1 lg:bg-h-backdrop-2 bg-cover relative m-0">
-    <div class="h-full bg-colorPrimary/40 mix-blend-hard flex flex-col">
-        <div class="flex-1 flex items-center justify-center flex-col lg:flex-row mt-0 relative">
-
-            <!-- Title Section -->
-            <div class="bg-colorPrimary/60 rounded-3xl flex flex-col justify-center items-center text-center p-8 lg:p-20 h-auto w-[85vw] lg:w-auto">
-                <h1 class="text-4xl lg:text-9xl text-white font-bold uppercase font-lexend">Stream It</h1>
-                <h2 class="text-xl lg:text-4xl text-white font-bold uppercase font-lexend">Listen on Apple Music and Spotify</h2>
-
-            </div>
-
-        </div>
+    <div class="relative z-10 mx-auto max-w-[1800px] reveal">
+        <p class="mb-4 text-[10px] font-black uppercase tracking-[0.6em] text-nike-volt">Listening Platforms</p>
+        <h1 class="font-display text-5xl uppercase italic leading-[0.84] tracking-tighter sm:text-7xl lg:text-[7rem]">
+            Stream<br>
+            <span class="text-outline not-italic">It</span>
+        </h1>
+        <p class="mt-8 max-w-3xl text-lg text-paper/75 sm:text-2xl">
+            Discover every place where you can stream JURI. Pick your platform and listen instantly.
+        </p>
     </div>
-</div>
+</section>
 
-<!-- Main Content Section -->
-<div class="bg-colorPrimary/20 h-auto m-0 py-24 flex justify-center items-center">
-    <div class="responsive-width flex flex-col lg:grid grid-cols-1 lg:grid-cols-6 gap-10">
+<section class="px-5 pb-24 sm:px-6 md:px-12 lg:px-20">
+    <div class="mx-auto grid max-w-[1800px] grid-cols-1 gap-8 lg:grid-cols-12">
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-7 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Where To Listen</h2>
+            <p class="mt-6 text-base leading-relaxed text-paper/75 sm:text-lg">
+                You can find releases on Apple Music, Spotify, YouTube, and YouTube Music. New music rolls out across multiple platforms at the same time, so you can listen wherever you want.
+            </p>
+            <p class="mt-4 text-base leading-relaxed text-paper/75 sm:text-lg">
+                Add tracks to your playlists, share them with friends, and stay up to date on new releases.
+            </p>
+        </article>
 
-
-         <!-- First Section (3/6) -->
-         <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/60 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-            
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold  font-lexend">Streaming Services</h1>
-    
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        Discover and enjoy my music across your favorite platforms! 🎶
-                    </p>
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        You can stream my tracks on Apple Music, Spotify, YouTube Music, and YouTube. Each platform offers a unique way to experience my songs, whether you’re adding them to your playlists, watching music videos, or exploring my latest releases.
-                    </p>
-                    <p class="text-base lg:text-2xl px-4 lg:px-0">
-                        I’m always working on expanding to more streaming services, so you’ll have even more ways to listen in the future. Stay tuned for updates as my music becomes available on new platforms!
-                    </p>
-
-                </div>
-
+        <article class="reveal rounded-[2rem] border border-turquoise/15 bg-[#07242B]/70 p-6 sm:p-8 lg:col-span-5 lg:p-10">
+            <h2 class="font-display text-4xl italic tracking-tight sm:text-5xl">Direct Links</h2>
+            <div class="mt-8 flex gap-4">
+                <a href="https://music.apple.com/us/artist/juri/1777135807" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/Apple_Music_Icon_wht.svg') }}" alt="Apple Music" class="h-8 w-8 transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                    {{-- <p class="mt-3 text-xs font-black uppercase tracking-[0.25em] text-paper/80 group-hover:text-nike-volt">Apple Music</p> --}}
+                </a>
+                <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/Spotify_Logo_White.png') }}" alt="Spotify" class="h-8 w-8 object-contain transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                    {{-- <p class="mt-3 text-xs font-black uppercase tracking-[0.25em] text-paper/80 group-hover:text-nike-volt">Spotify</p> --}}
+                </a>
+                <a href="https://www.youtube.com/@theofficialjuri" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/youtube_white.svg') }}" alt="YouTube" class="h-8 w-8 transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                    {{-- <p class="mt-3 text-xs font-black uppercase tracking-[0.25em] text-paper/80 group-hover:text-nike-volt">YouTube</p> --}}
+                </a>
+                <a href="https://music.youtube.com/channel/UCbbD2b6eD2sKjLC4FHfGmRw" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-turquoise/20 bg-deep-ocean/40 p-4 transition-all hover:scale-110 hover:border-nike-volt/50 hover:bg-deep-ocean/65">
+                    <img src="{{ asset('images/icons/ytmusic_icon_white.svg') }}" alt="YouTube Music" class="h-8 w-8 transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(206,255,0,0.75)]">
+                    {{-- <p class="mt-3 text-xs font-black uppercase tracking-[0.25em] text-paper/80 group-hover:text-nike-volt">YouTube Music</p> --}}
+                </a>
             </div>
-        </div>
-
-
-        <!-- Second Section (3/6) -->
-        <div class="h-auto lg:h-full col-span-3 flex">
-            <div class="bg-colorPrimary/20 rounded-3xl text-sm lg:text-2xl flex flex-col justify-center items-center text-white p-8 lg:p-20 py-20 text-left lg:text-justify">
-                <!-- Content goes here -->
-                <div class="">
-                    <h1 class="mb-4 lg:mb-6 px-4 lg:px-0 text-4xl font-bold font-lexend">Listen To It All</h1>
-    
-                    <p class="text-base lg:text-2xl mb-6 px-4 lg:px-0">
-                        You can now listen to my music on <span class="font-bold">Apple Music</span>, <span class="font-bold">Spotify</span>, <span class="font-bold">YouTube Music</span>, and <span class="font-bold">YouTube</span>. I’m constantly expanding, so stay tuned for more platforms coming soon!
-                    </p>
-                    <p class="text-base lg:text-2xl mb-8 px-4 lg:px-0">
-                        Click the links below to stream my first single, Blue Butterfly, and more as they release. Join me on this incredible musical journey. <span class="glowing-star"></span>
-                    </p>
-                    <div class="flex space-x-4 justify-center lg:justify-start w-full">
-                        <a href="https://music.apple.com/us/artist/juri/1777135807" class="w-12 lg:w-16 h-12 lg:h-16 bg-apple-music-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- Apple Music Icon -->
-                        </a>
-                        <a href="https://open.spotify.com/artist/6V5305M5J7Z8UXD9EVWMYj?si=acNfjgalRMON76ndy7xlOA" class="w-12 lg:w-16 h-12 lg:h-16 bg-spotify-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- Spotify Icon -->
-                        </a>
-                        <a href="https://www.youtube.com/@theofficialjuri" class="w-12 lg:w-16 h-12 lg:h-16 bg-youtube-white bg-contain bg-center bg-no-repeat rounded-lg flex items-center justify-center">
-                            <!-- YouTube Icon -->
-                        </a>
-                        <a href="https://music.youtube.com/channel/UCbbD2b6eD2sKjLC4FHfGmRw" class="w-12 lg:w-16 h-12 lg:h-16 bg-youtube-music-white bg-cover rounded-lg flex items-center justify-center">
-                            <!-- YouTube Music Icon -->
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        
+        </article>
     </div>
-</div>
-
+</section>
 @endsection

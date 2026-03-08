@@ -1,0 +1,128 @@
+{
+  "singles": [
+    {
+      "title": "JURI - Those Eyes",
+      "visible": true,
+      "label": "JURI Bloom",
+      "release_date": "2025-05-15",
+      "cover_image": "images/album-covers/juri-those-eyes-single.PNG",
+      "description": "Those Eyes is my take on a beautiful song by New West, inspired by my own experiences of love, loss, and growth. This cover reflects my personal journey and brings a piece of my story to life. I hope it resonates with you too.",
+      "producers": [
+        "Out Of This World"
+      ],
+      "tracks": [
+        {
+          "title": "Those Eyes",
+          "subtitle": "Cover",
+          "producers": [
+            "Out Of This World"
+          ],
+          "duration": "3:54"
+        }
+      ]
+    },
+    {
+      "title": "JURI - Blue Butterfly",
+      "visible": false,
+      "label": "JURI Bloom",
+      "release_date": "2024-10-30",
+      "cover_image": "images/album-covers/juri-blue-butterfly-single.jpeg",
+      "description": "Blue Butterfly celebrates resilience and personal transformation, symbolized by a butterfly soaring through storms. It inspires courage and staying true to yourself, even in the darkest moments.",
+      "tracks": [
+        {
+          "title": "Blue Butterfly",
+          "featured_artists": [
+            "Demo Guest"
+          ],
+          "duration": "2:31"
+        }
+      ]
+    }
+  ],
+  "eps": [
+    {
+      "title": "JURI - Northern Echoes (Test EP)",
+      "visible": false,
+      "label": "JURI Bloom",
+      "release_date": "2026-01-10",
+      "cover_image": "images/photos/alternative-profile-picture.PNG",
+      "description": "Test EP entry for layout and data rendering checks across the music page.",
+      "featured_artists": [
+        "Aria Lane"
+      ],
+      "producers": [
+        "Northline Audio"
+      ],
+      "tracks": [
+        {
+          "title": "Northern Echoes",
+          "producers": [
+            "Northline Audio"
+          ],
+          "duration": "3:12"
+        },
+        {
+          "title": "Midnight Route",
+          "subtitle": "demo version",
+          "featured_artists": [
+            "Aria Lane"
+          ],
+          "duration": "2:58"
+        },
+        {
+          "title": "Glowline",
+          "duration": "3:41"
+        }
+      ]
+    }
+  ],
+  "albums": [
+    {
+      "title": "JURI - Horizon Bloom (Test Album)",
+      "visible": false,
+      "label": "JURI Bloom",
+      "release_date": "2025-11-21",
+      "cover_image": "images/photos/profile-picture.PNG",
+      "description": "Test album entry for validating full-length release rendering and tracklist behavior.",
+      "producers": [
+        "Skyframe",
+        "Northline Audio"
+      ],
+      "tracks": [
+        {
+          "title": "Opening Light",
+          "producers": [
+            "Skyframe"
+          ],
+          "duration": "1:46"
+        },
+        {
+          "title": "City Pulse",
+          "featured_artists": [
+            "Neon Rae"
+          ],
+          "duration": "3:33"
+        },
+        {
+          "title": "Glass River",
+          "producers": [
+            "Northline Audio"
+          ],
+          "duration": "4:06"
+        },
+        {
+          "title": "Horizon Bloom",
+          "subtitle": "title track",
+          "featured_artists": [
+            "Neon Rae"
+          ],
+          "duration": "3:58"
+        },
+        {
+          "title": "Afterglow",
+          "duration": "2:44"
+        }
+      ]
+    }
+  ]
+}

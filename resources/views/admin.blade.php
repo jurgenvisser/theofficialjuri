@@ -1,44 +1,43 @@
 @extends('layouts.app')
 
-@section('title', 'Homepage')  <!-- Set the title for this page -->
+@section('title', 'Admin Login')
 
 @section('content')
+<section class="relative overflow-x-clip overflow-y-visible px-5 pb-24 pt-28 sm:px-6 md:px-12 md:pt-36 lg:px-20">
+    <div class="absolute left-[-10%] top-[-10%] h-[42vw] w-[42vw] rounded-full bg-turquoise/10 blur-[110px]"></div>
+    <div class="absolute bottom-[-12%] right-[-10%] h-[45vw] w-[45vw] rounded-full bg-azure/20 blur-[130px]"></div>
 
-<div class="h-[calc(100vh-4rem)] bg-v-backdrop-1 lg:bg-h-backdrop-1 bg-cover relative m-0 flex items-center justify-center">
-    {{-- <div class="h-[calc(100vh-4rem)] bg-v-backdrop-9 lg:bg-h-backdrop-4 bg-cover relative m-0"> --}}
-    <div class="bg-colorPrimary/20 p-8 lg:p-16 text-white w-[90vw] md:w-[60vw] lg:w-[40vw]">
-        <h1 class="text-2xl lg:text-4xl font-bold uppercase font-times text-center mb-6">Admin Login</h1>
-       
-        
-        <form action="/admin/dashboard" method="POST" class="flex flex-col gap-6">
-            <!-- CSRF Token (Laravel only) -->
-            @csrf
+    <div class="relative z-10 mx-auto max-w-[780px] reveal">
+        <div class="rounded-[2rem] border border-turquoise/20 bg-[#07242B]/80 p-6 sm:p-8 md:p-10">
+            <p class="mb-3 text-[10px] font-black uppercase tracking-[0.5em] text-nike-volt">Secure Access</p>
+            <h1 class="font-display text-4xl italic tracking-tight sm:text-5xl">Admin Login</h1>
+            <p class="mt-4 text-sm text-paper/70 sm:text-base">Enter the admin password to open the dashboard.</p>
 
-            <!-- Password Input -->
-            <div class="flex flex-col">
-                <label for="password" class="text-lg lg:text-xl font-medium mb-2">
-                    @if(session('error'))
-                        Enter Password - <span class="text-rose-600">{{ session('error') }}</span> <!-- Display error message if password is incorrect -->
-                    @else
-                        Enter Password
-                    @endif
-                </label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    class="p-3 text-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-colorPrimary/70" 
-                    required 
-                />
-            </div>
+            <form action="/admin/dashboard" method="POST" class="mt-8 space-y-5">
+                @csrf
 
-            <!-- Submit Button -->
-            <button 
-                type="submit" 
-                class="bg-colorPrimary hover:bg-colorPrimary/80 transition-all text-lg font-bold uppercase py-3 px-6">
-                Login
-            </button>
-        </form>
+                <div>
+                    <label for="password" class="mb-2 block text-xs font-black uppercase tracking-[0.25em] text-paper/75">
+                        @if (session('error'))
+                            Password <span class="text-rose-400">({{ session('error') }})</span>
+                        @else
+                            Password
+                        @endif
+                    </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        class="w-full rounded-2xl border border-turquoise/25 bg-deep-ocean/60 px-4 py-3 text-paper outline-none transition-colors focus:border-nike-volt/60"
+                    />
+                </div>
+
+                <button type="submit" class="inline-flex items-center rounded-full bg-nike-volt px-6 py-3 text-xs font-black uppercase tracking-[0.3em] text-deep-ocean transition-transform hover:scale-[1.02]">
+                    Login
+                </button>
+            </form>
+        </div>
     </div>
-</div>
+</section>
 @endsection
